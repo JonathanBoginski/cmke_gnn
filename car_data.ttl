@@ -1,0 +1,167 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbp: <http://dbpedia.org/property/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://dbpedia.org/resource/Amilcar_CC> a dbo:Automobile ;
+    rdfs:label "Amilcar CC" ;
+    dbo:manufacturer <http://dbpedia.org/resource/Amilcar> ;
+    dbp:bodyStyle <http://dbpedia.org/resource/Coupé> ;
+    dbp:length 3.302 ;
+    dbp:transmission "Three-speed manual" ;
+    dbp:weight 350000.0 .
+
+<http://dbpedia.org/resource/Convair_880> a dbo:Automobile ;
+    rdfs:label "Convair 880" ;
+    dbo:manufacturer <http://dbpedia.org/resource/Convair> .
+
+<http://dbpedia.org/resource/DMC_DeLorean> a dbo:Automobile ;
+    rdfs:label "DMC DeLorean" ;
+    dbo:manufacturer <http://dbpedia.org/resource/DeLorean_Motor_Company> ;
+    dbp:assembly "DeLorean Motor Cars, Ltd.  Dunmurry, Belfast, Northern Ireland" ;
+    dbp:bodyStyle <http://dbpedia.org/resource/Coupé> ;
+    dbp:height 1.14 ;
+    dbp:length 4.267 ;
+    dbp:transmission "3-speed automatic" ;
+    dbp:weight 1233000.0 ;
+    dbp:width 1.988 .
+
+<http://dbpedia.org/resource/Delahaye_171> a dbo:Automobile ;
+    rdfs:label "Delahaye 171" ;
+    dbo:manufacturer <http://dbpedia.org/resource/Delahaye> ;
+    dbp:height 2.3 ;
+    dbp:length 5.22 ;
+    dbp:transmission "4-speedmanualwith synchromesh on upper 3 ratios" ;
+    dbp:weight 1930000.0 ;
+    dbp:width 1.93 .
+
+<http://dbpedia.org/resource/FSC_Lublin> a dbo:Automobile ;
+    rdfs:label "FSC Lublin" ;
+    dbo:manufacturer <http://dbpedia.org/resource/Intrall> ;
+    dbp:assembly <http://dbpedia.org/resource/Prague> ;
+    dbp:bodyStyle <http://dbpedia.org/resource/Van> ;
+    dbp:transmission "4 / 5-speedmanual" .
+
+<http://dbpedia.org/resource/MCW_Metrocab> a dbo:Automobile ;
+    rdfs:label "MCW Metrocab" ;
+    dbo:manufacturer <http://dbpedia.org/resource/Hooper_(coachbuilder)> ;
+    dbp:assembly <http://dbpedia.org/resource/London> ;
+    dbp:bodyStyle <http://dbpedia.org/resource/Sedan_(automobile)> ;
+    dbp:height 1.755 ;
+    dbp:length 4.505 ;
+    dbp:transmission "4-speedautomatic" ;
+    dbp:width 1.76 .
+
+<http://dbpedia.org/resource/Maule_M-5> a dbo:Automobile ;
+    rdfs:label "Maule M-5" ;
+    dbo:manufacturer <http://dbpedia.org/resource/Maule_Air> .
+
+<http://dbpedia.org/resource/McLaren_F1> a dbo:Automobile ;
+    rdfs:label "McLaren F1" ;
+    dbo:manufacturer <http://dbpedia.org/resource/McLaren_Automotive> ;
+    dbp:assembly "Woking, England, UK" ;
+    dbp:bodyStyle <http://dbpedia.org/resource/Coupé> ;
+    dbp:height 1.14 ;
+    dbp:length 4.287 ;
+    dbp:transmission "6-speedmanual" ;
+    dbp:weight 1138000.0 ;
+    dbp:width 1.82 .
+
+<http://dbpedia.org/resource/PAZ-3205> a dbo:Automobile ;
+    rdfs:label "PAZ-3205" ;
+    dbo:manufacturer <http://dbpedia.org/resource/Pavlovo_Bus_Factory> .
+
+<http://dbpedia.org/resource/Plymouth_XNR> a dbo:Automobile ;
+    rdfs:label "Plymouth XNR" ;
+    dbo:manufacturer <http://dbpedia.org/resource/Carrozzeria_Ghia> ;
+    dbp:bodyStyle <http://dbpedia.org/resource/Roadster_(automobile)> ;
+    dbp:transmission "3-speedmanual" .
+
+<http://dbpedia.org/resource/Qiantu_K50> a dbo:Automobile ;
+    rdfs:label "Qiantu K50" ;
+    dbo:manufacturer <http://dbpedia.org/resource/Qiantu_Motor> ;
+    dbp:assembly <http://dbpedia.org/resource/Suzhou,_Jiangsu> ;
+    dbp:bodyStyle <http://dbpedia.org/resource/Coupé> ;
+    dbp:height 1.254 ;
+    dbp:length 4.628 ;
+    dbp:weight 1900000.0 ;
+    dbp:width 2.064 .
+
+<http://dbpedia.org/resource/Renault_Sport_Spider> a dbo:Automobile ;
+    rdfs:label "Renault Sport Spider" ;
+    dbo:manufacturer <http://dbpedia.org/resource/Renault_Sport> ;
+    dbp:assembly "France: Dieppe, Seine-Maritime" ;
+    dbp:bodyStyle <http://dbpedia.org/resource/Roadster_(automobile)> ;
+    dbp:height 1.25 ;
+    dbp:length 3.795 ;
+    dbp:transmission "5-speedmanual" ;
+    dbp:weight 930000.0 ;
+    dbp:width 1.83 .
+
+<http://dbpedia.org/resource/Rover_SD1> a dbo:Automobile ;
+    rdfs:label "Rover SD1" ;
+    dbo:manufacturer <http://dbpedia.org/resource/Rover_(marque)> ;
+    dbp:assembly "Solihull, West Midlands, England" ;
+    dbp:bodyStyle <http://dbpedia.org/resource/Hatchback> ;
+    dbp:height 1.3716 ;
+    dbp:length 4.699 ;
+    dbp:transmission "5-speedmanual" ;
+    dbp:width 1.76784 .
+
+<http://dbpedia.org/resource/Rugby_(automobile)> a dbo:Automobile ;
+    rdfs:label "Rugby (automobile)" ;
+    dbo:manufacturer <http://dbpedia.org/resource/Dominion_Motors_Frontenac> .
+
+<http://dbpedia.org/resource/SWM_G01> a dbo:Automobile ;
+    rdfs:label "SWM G01" ;
+    dbo:manufacturer <http://dbpedia.org/resource/SWM_(automobiles)> ;
+    dbp:assembly <http://dbpedia.org/resource/China> ;
+    dbp:bodyStyle <http://dbpedia.org/resource/SUV> ;
+    dbp:height 1.725 ;
+    dbp:length 4.61 ;
+    dbp:transmission "6-speedmanual" ;
+    dbp:weight 1560000.0 ;
+    dbp:width 1.855 .
+
+<http://dbpedia.org/resource/Saipa_Saina> a dbo:Automobile ;
+    rdfs:label "Saipa Saina" ;
+    dbo:manufacturer <http://dbpedia.org/resource/SAIPA> ;
+    dbp:assembly <http://dbpedia.org/resource/Iran> ;
+    dbp:bodyStyle <http://dbpedia.org/resource/Sedan_(automobile)> ;
+    dbp:height 1.484 ;
+    dbp:length 4.215 ;
+    dbp:weight 1050000.0 ;
+    dbp:width 1.663 .
+
+<http://dbpedia.org/resource/Shelby_GLH-S> a dbo:Automobile ;
+    rdfs:label "Shelby GLH-S" ;
+    dbo:manufacturer <http://dbpedia.org/resource/Carroll_Shelby> ;
+    dbp:assembly <http://dbpedia.org/resource/Belvidere,_Illinois> ;
+    dbp:bodyStyle <http://dbpedia.org/resource/Hatchback> ;
+    dbp:transmission "5-speed A525manual" .
+
+<http://dbpedia.org/resource/VUHL_05> a dbo:Automobile ;
+    rdfs:label "VUHL 05" ;
+    dbo:manufacturer <http://dbpedia.org/resource/VUHL> ;
+    dbp:assembly <http://dbpedia.org/resource/Querétaro> ;
+    dbp:bodyStyle <http://dbpedia.org/resource/Coupe> ;
+    dbp:height 1.12 ;
+    dbp:length 3.718 ;
+    dbp:weight 660000.0 ;
+    dbp:width 1.876 .
+
+<http://dbpedia.org/resource/Volkswagen_Caddy> a dbo:Automobile ;
+    rdfs:label "Volkswagen Caddy" ;
+    dbo:manufacturer <http://dbpedia.org/resource/Volkswagen_Group> ;
+    dbp:assembly "Poland: Poznań" ;
+    dbp:bodyStyle <http://dbpedia.org/resource/Minivan> ;
+    dbp:height 1.988 ;
+    dbp:length 4.064 ;
+    dbp:transmission "4-speedmanual" ;
+    dbp:weight 1290000.0 ;
+    dbp:width 1.684 .
+
+<http://dbpedia.org/resource/Volkswagen_Polo_GTI_R5> a dbo:Automobile ;
+    rdfs:label "Volkswagen Polo GTI R5" ;
+    dbo:manufacturer <http://dbpedia.org/resource/Volkswagen_Motorsport> .
+

@@ -1,0 +1,102 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/ontology/Automobile/wheelbase> rdfs:label "wheelbase (mm)"@en .
+
+<http://dbpedia.org/ontology/MeanOfTransportation/height> rdfs:label "height (mm)"@en .
+
+<http://dbpedia.org/ontology/MeanOfTransportation/length> rdfs:label "length (mm)"@en .
+
+<http://dbpedia.org/ontology/MeanOfTransportation/weight> rdfs:label "weight (kg)"@en .
+
+<http://dbpedia.org/ontology/MeanOfTransportation/width> rdfs:label "width (mm)"@en .
+
+<http://dbpedia.org/ontology/abstract> rdfs:label "has abstract"@en .
+
+<http://dbpedia.org/ontology/alternativeName> rdfs:label "alternative name"@en .
+
+<http://dbpedia.org/ontology/automobilePlatform> rdfs:label "automobile platform"@en .
+
+<http://dbpedia.org/ontology/battery> rdfs:label "battery"@en .
+
+<http://dbpedia.org/ontology/height> rdfs:label "height (μ)"@en .
+
+<http://dbpedia.org/ontology/range> rdfs:label "range"@en .
+
+<http://dbpedia.org/ontology/sales> rdfs:label "sales"@en .
+
+<http://dbpedia.org/ontology/thumbnail> rdfs:label "thumbnail"@en .
+
+<http://dbpedia.org/ontology/wikiPageLength> rdfs:label "page length (characters) of wiki page"@en .
+
+<http://dbpedia.org/property/aka> rdfs:label "aka"@en .
+
+<http://dbpedia.org/property/align> rdfs:label "align"@en .
+
+<http://dbpedia.org/property/assembly> rdfs:label "assembly"@en .
+
+<http://dbpedia.org/property/battery> rdfs:label "battery"@en .
+
+<http://dbpedia.org/property/bodyStyle> rdfs:label "body style"@en .
+
+<http://dbpedia.org/property/caption> rdfs:label "caption"@en .
+
+<http://dbpedia.org/property/chassis> rdfs:label "chassis"@en .
+
+<http://dbpedia.org/property/class> rdfs:label "class"@en .
+
+<http://dbpedia.org/property/date> rdfs:label "date"@en .
+
+<http://dbpedia.org/property/designer> rdfs:label "designer"@en .
+
+<http://dbpedia.org/property/direction> rdfs:label "direction"@en .
+
+<http://dbpedia.org/property/drivetrain> rdfs:label "drivetrain"@en .
+
+<http://dbpedia.org/property/engine> rdfs:label "engine"@en .
+
+<http://dbpedia.org/property/footer> rdfs:label "footer"@en .
+
+<http://dbpedia.org/property/height> rdfs:label "height"@en .
+
+<http://dbpedia.org/property/image> rdfs:label "image"@en .
+
+<http://dbpedia.org/property/layout> rdfs:label "Layout"@en .
+
+<http://dbpedia.org/property/length> rdfs:label "length"@en .
+
+<http://dbpedia.org/property/manufacturer> rdfs:label "manufacturer"@en .
+
+<http://dbpedia.org/property/modelYears> rdfs:label "model years"@en .
+
+<http://dbpedia.org/property/motor> rdfs:label "motor"@en .
+
+<http://dbpedia.org/property/name> rdfs:label "name"@en .
+
+<http://dbpedia.org/property/platform> rdfs:label "platform"@en .
+
+<http://dbpedia.org/property/predecessor> rdfs:label "predecessor"@en .
+
+<http://dbpedia.org/property/production> rdfs:label "production"@en .
+
+<http://dbpedia.org/property/reason> rdfs:label "reason"@en .
+
+<http://dbpedia.org/property/related> rdfs:label "related"@en .
+
+<http://dbpedia.org/property/sp> rdfs:label "sp"@en .
+
+<http://dbpedia.org/property/successor> rdfs:label "successor"@en .
+
+<http://dbpedia.org/property/title> rdfs:label "title"@en .
+
+<http://dbpedia.org/property/totalWidth> rdfs:label "total width"@en .
+
+<http://dbpedia.org/property/transmission> rdfs:label "transmission"@en .
+
+<http://dbpedia.org/property/url> rdfs:label "url"@en .
+
+<http://dbpedia.org/property/weight> rdfs:label "weight"@en .
+
+<http://dbpedia.org/property/wheelbase> rdfs:label "wheelbase"@en .
+
+<http://dbpedia.org/property/width> rdfs:label "width"@en .
+
