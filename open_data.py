@@ -46,14 +46,14 @@ def query_and_save_to_ttl():
             property_uri = result["property"]["value"]
             property_label = result["label"]["value"]
             
-            print(f"Property: {property_label} (URI: {property_uri})")
+            print(f"Property: {property_label}")
 
             # Add triples to the graph
             property_node = URIRef(property_uri)
             g.add((property_node, RDFS.label, Literal(property_label, lang="en")))
 
         # Save the graph in Turtle format
-        output_file = "filtered_car_properties.ttl"
+        output_file = "open_data_car_properties.ttl"
         g.serialize(destination=output_file, format="turtle")
         print(f"\nData has been saved to '{output_file}' in Turtle format.")
 
