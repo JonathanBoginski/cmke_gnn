@@ -1,0 +1,453 @@
+@prefix carshare: <http://example.org/carshare#> .
+@prefix ns1: <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+carshare:Client a rdfs:Class ;
+    ns1:predictedLink carshare:RoadConstruction,
+        carshare:Vehicle,
+        carshare:constructionLocation,
+        carshare:drivingSickness,
+        carshare:familyFriendlyFeatures,
+        carshare:fuel,
+        carshare:traffic .
+
+carshare:RoadConstruction a rdfs:Class ;
+    ns1:predictedLink carshare:Vehicle,
+        carshare:accountType,
+        carshare:familyFriendlyFeatures .
+
+carshare:RoadSegment a rdfs:Class ;
+    ns1:predictedLink carshare:Client,
+        carshare:RoadConstruction,
+        carshare:TripMetrics,
+        carshare:TripRequest,
+        carshare:Vehicle,
+        carshare:accountType,
+        carshare:constructionID,
+        carshare:constructionLocation,
+        carshare:daytime,
+        carshare:drivingSickness,
+        carshare:fromLocation,
+        carshare:fuel,
+        carshare:requestedBy,
+        carshare:timeOfDay,
+        carshare:toLocation,
+        carshare:traffic,
+        carshare:trafficCongestion,
+        carshare:tripMetrics,
+        carshare:visibility .
+
+carshare:TripMetrics a rdfs:Class ;
+    ns1:predictedLink carshare:Client,
+        carshare:RoadConstruction,
+        carshare:Vehicle,
+        carshare:accountType,
+        carshare:age,
+        carshare:carMaintenanceHistory,
+        carshare:clientID,
+        carshare:comfortImportance,
+        carshare:constructionID,
+        carshare:constructionLocation,
+        carshare:dayOfWeek,
+        carshare:drivingProficiency,
+        carshare:drivingSickness,
+        carshare:endLocation,
+        carshare:fuel,
+        carshare:fuelTypePreference,
+        carshare:gender,
+        carshare:localEvents,
+        carshare:movementType,
+        carshare:offRoadCapability,
+        carshare:poi,
+        carshare:policeRecord,
+        carshare:position,
+        carshare:preferredSpeed,
+        carshare:requestedBy,
+        carshare:rideTime,
+        carshare:roadConstructions,
+        carshare:safetyImportance,
+        carshare:segmentID,
+        carshare:startTime,
+        carshare:status,
+        carshare:temperature,
+        carshare:timeOfDay,
+        carshare:toLocation,
+        carshare:traffic,
+        carshare:vehicleID,
+        carshare:vehiclePosition,
+        carshare:visibility,
+        carshare:weather .
+
+carshare:TripRequest a rdfs:Class ;
+    ns1:predictedLink carshare:Client,
+        carshare:RoadConstruction,
+        carshare:TripMetrics,
+        carshare:Vehicle,
+        carshare:accountType,
+        carshare:age,
+        carshare:carMaintenanceHistory,
+        carshare:clientID,
+        carshare:comfortImportance,
+        carshare:constructionID,
+        carshare:constructionLocation,
+        carshare:dayOfWeek,
+        carshare:drivingProficiency,
+        carshare:drivingSickness,
+        carshare:endLocation,
+        carshare:fuel,
+        carshare:fuelTypePreference,
+        carshare:gender,
+        carshare:localEvents,
+        carshare:movementType,
+        carshare:offRoadCapability,
+        carshare:poi,
+        carshare:policeRecord,
+        carshare:position,
+        carshare:preferredSpeed,
+        carshare:requestedBy,
+        carshare:rideTime,
+        carshare:roadConstructions,
+        carshare:safetyImportance,
+        carshare:segmentID,
+        carshare:startTime,
+        carshare:status,
+        carshare:temperature,
+        carshare:timeOfDay,
+        carshare:toLocation,
+        carshare:traffic,
+        carshare:tripMetrics,
+        carshare:vehicleID,
+        carshare:vehiclePosition,
+        carshare:visibility,
+        carshare:weather .
+
+carshare:Vehicle a rdfs:Class .
+
+carshare:preferredRouteType a rdf:Property ;
+    ns1:predictedLink carshare:endTime,
+        carshare:passengerAmount,
+        carshare:requestID,
+        carshare:transmissionReference ;
+    rdfs:domain carshare:Client ;
+    rdfs:range xsd:string .
+
+carshare:startLocation a rdf:Property ;
+    ns1:predictedLink carshare:Client,
+        carshare:RoadConstruction,
+        carshare:RoadSegment,
+        carshare:TripMetrics,
+        carshare:TripRequest,
+        carshare:Vehicle,
+        carshare:accountType,
+        carshare:constructionID,
+        carshare:constructionLocation,
+        carshare:daytime,
+        carshare:drivingSickness,
+        carshare:fromLocation,
+        carshare:fuel,
+        carshare:requestedBy,
+        carshare:timeOfDay,
+        carshare:toLocation,
+        carshare:trafficCongestion,
+        carshare:tripMetrics,
+        carshare:visibility ;
+    rdfs:domain carshare:RoadSegment ;
+    rdfs:range xsd:string .
+
+carshare:endTime a rdf:Property ;
+    ns1:predictedLink carshare:passengerAmount,
+        carshare:requestID,
+        carshare:transmissionReference ;
+    rdfs:domain carshare:TripRequest ;
+    rdfs:range xsd:dateTime .
+
+carshare:age a rdf:Property ;
+    rdfs:domain carshare:Client ;
+    rdfs:range xsd:integer .
+
+carshare:carMaintenanceHistory a rdf:Property ;
+    rdfs:domain carshare:TripMetrics ;
+    rdfs:range xsd:integer .
+
+carshare:clientID a rdf:Property ;
+    rdfs:domain carshare:Client ;
+    rdfs:range xsd:string .
+
+carshare:comfortImportance a rdf:Property ;
+    rdfs:domain carshare:Client ;
+    rdfs:range xsd:string .
+
+carshare:dayOfWeek a rdf:Property ;
+    rdfs:domain carshare:TripRequest ;
+    rdfs:range xsd:string .
+
+carshare:drivingProficiency a rdf:Property ;
+    rdfs:domain carshare:Client ;
+    rdfs:range xsd:string .
+
+carshare:endLocation a rdf:Property ;
+    rdfs:domain carshare:RoadSegment ;
+    rdfs:range xsd:string .
+
+carshare:fuelTypePreference a rdf:Property ;
+    rdfs:domain carshare:Client ;
+    rdfs:range xsd:string .
+
+carshare:gender a rdf:Property ;
+    rdfs:domain carshare:Client ;
+    rdfs:range xsd:string .
+
+carshare:localEvents a rdf:Property ;
+    rdfs:domain carshare:TripRequest ;
+    rdfs:range xsd:string .
+
+carshare:movementType a rdf:Property ;
+    rdfs:domain carshare:RoadSegment ;
+    rdfs:range xsd:string .
+
+carshare:offRoadCapability a rdf:Property ;
+    rdfs:domain carshare:Client ;
+    rdfs:range xsd:string .
+
+carshare:poi a rdf:Property ;
+    rdfs:domain carshare:TripMetrics ;
+    rdfs:range xsd:float .
+
+carshare:policeRecord a rdf:Property ;
+    rdfs:domain carshare:Client ;
+    rdfs:range xsd:string .
+
+carshare:position a rdf:Property ;
+    rdfs:domain carshare:Client ;
+    rdfs:range xsd:string .
+
+carshare:preferredSpeed a rdf:Property ;
+    rdfs:domain carshare:Client ;
+    rdfs:range xsd:string .
+
+carshare:requestID a rdf:Property ;
+    ns1:predictedLink carshare:passengerAmount,
+        carshare:transmissionReference ;
+    rdfs:domain carshare:TripRequest ;
+    rdfs:range xsd:string .
+
+carshare:rideTime a rdf:Property ;
+    rdfs:domain carshare:TripMetrics ;
+    rdfs:range xsd:integer .
+
+carshare:roadConstructions a rdf:Property ;
+    rdfs:domain carshare:TripRequest ;
+    rdfs:range xsd:string .
+
+carshare:safetyImportance a rdf:Property ;
+    rdfs:domain carshare:Client ;
+    rdfs:range xsd:string .
+
+carshare:segmentID a rdf:Property ;
+    rdfs:domain carshare:RoadSegment ;
+    rdfs:range xsd:string .
+
+carshare:startTime a rdf:Property ;
+    rdfs:domain carshare:TripRequest ;
+    rdfs:range xsd:dateTime .
+
+carshare:status a rdf:Property ;
+    rdfs:domain carshare:Vehicle ;
+    rdfs:range xsd:string .
+
+carshare:temperature a rdf:Property ;
+    rdfs:domain carshare:TripMetrics ;
+    rdfs:range xsd:integer .
+
+carshare:trafficCongestion a rdf:Property ;
+    ns1:predictedLink carshare:Client,
+        carshare:RoadConstruction,
+        carshare:TripMetrics,
+        carshare:TripRequest,
+        carshare:Vehicle,
+        carshare:accountType,
+        carshare:constructionID,
+        carshare:constructionLocation,
+        carshare:drivingSickness,
+        carshare:fromLocation,
+        carshare:fuel,
+        carshare:requestedBy,
+        carshare:timeOfDay,
+        carshare:toLocation,
+        carshare:traffic,
+        carshare:tripMetrics,
+        carshare:visibility ;
+    rdfs:domain carshare:TripMetrics ;
+    rdfs:range xsd:integer .
+
+carshare:vehicleID a rdf:Property ;
+    rdfs:domain carshare:Vehicle ;
+    rdfs:range xsd:string .
+
+carshare:vehiclePosition a rdf:Property ;
+    rdfs:domain carshare:Vehicle ;
+    rdfs:range xsd:string .
+
+carshare:weather a rdf:Property ;
+    rdfs:domain carshare:TripRequest ;
+    rdfs:range xsd:string .
+
+carshare:fromLocation a rdf:Property ;
+    ns1:predictedLink carshare:RoadConstruction,
+        carshare:TripMetrics,
+        carshare:TripRequest,
+        carshare:Vehicle,
+        carshare:accountType,
+        carshare:constructionID,
+        carshare:constructionLocation,
+        carshare:daytime,
+        carshare:drivingSickness,
+        carshare:timeOfDay,
+        carshare:toLocation,
+        carshare:tripMetrics,
+        carshare:visibility ;
+    rdfs:domain carshare:TripRequest ;
+    rdfs:range xsd:string .
+
+carshare:transmissionReference a rdf:Property ;
+    ns1:predictedLink carshare:passengerAmount ;
+    rdfs:domain carshare:Client ;
+    rdfs:range xsd:string .
+
+carshare:passengerAmount a rdf:Property ;
+    rdfs:domain carshare:Client ;
+    rdfs:range xsd:integer .
+
+carshare:daytime a rdf:Property ;
+    ns1:predictedLink carshare:accountType,
+        carshare:toLocation ;
+    rdfs:domain carshare:TripMetrics ;
+    rdfs:range xsd:time .
+
+carshare:tripMetrics a rdf:Property ;
+    ns1:predictedLink carshare:RoadConstruction,
+        carshare:TripMetrics,
+        carshare:accountType,
+        carshare:constructionID,
+        carshare:constructionLocation,
+        carshare:daytime,
+        carshare:drivingSickness,
+        carshare:timeOfDay,
+        carshare:toLocation,
+        carshare:visibility ;
+    rdfs:domain carshare:TripRequest ;
+    rdfs:range carshare:TripMetrics .
+
+carshare:familyFriendlyFeatures a rdf:Property ;
+    rdfs:domain carshare:Client ;
+    rdfs:range xsd:string .
+
+carshare:timeOfDay a rdf:Property ;
+    ns1:predictedLink carshare:Client,
+        carshare:RoadConstruction,
+        carshare:Vehicle,
+        carshare:accountType,
+        carshare:constructionID,
+        carshare:constructionLocation,
+        carshare:daytime,
+        carshare:drivingSickness,
+        carshare:fuel,
+        carshare:toLocation,
+        carshare:visibility ;
+    rdfs:domain carshare:TripRequest ;
+    rdfs:range xsd:string .
+
+carshare:requestedBy a rdf:Property ;
+    ns1:predictedLink carshare:Client,
+        carshare:RoadConstruction,
+        carshare:Vehicle,
+        carshare:constructionLocation,
+        carshare:drivingSickness,
+        carshare:familyFriendlyFeatures,
+        carshare:fuel,
+        carshare:traffic ;
+    rdfs:domain carshare:TripRequest ;
+    rdfs:range carshare:Client .
+
+carshare:toLocation a rdf:Property ;
+    ns1:predictedLink carshare:Client,
+        carshare:RoadConstruction,
+        carshare:Vehicle,
+        carshare:accountType,
+        carshare:constructionID,
+        carshare:constructionLocation,
+        carshare:drivingSickness,
+        carshare:fuel,
+        carshare:requestedBy,
+        carshare:traffic,
+        carshare:visibility ;
+    rdfs:domain carshare:TripRequest ;
+    rdfs:range xsd:string .
+
+carshare:visibility a rdf:Property ;
+    ns1:predictedLink carshare:Client,
+        carshare:RoadConstruction,
+        carshare:Vehicle,
+        carshare:accountType,
+        carshare:constructionID,
+        carshare:constructionLocation,
+        carshare:drivingSickness,
+        carshare:fuel,
+        carshare:requestedBy,
+        carshare:traffic ;
+    rdfs:domain carshare:TripMetrics ;
+    rdfs:range xsd:integer .
+
+carshare:constructionID a rdf:Property ;
+    ns1:predictedLink carshare:Client,
+        carshare:RoadConstruction,
+        carshare:Vehicle,
+        carshare:accountType,
+        carshare:constructionLocation,
+        carshare:drivingSickness,
+        carshare:fuel,
+        carshare:requestedBy,
+        carshare:traffic ;
+    rdfs:domain carshare:RoadConstruction ;
+    rdfs:range xsd:string .
+
+carshare:fuel a rdf:Property ;
+    ns1:predictedLink carshare:RoadConstruction,
+        carshare:Vehicle,
+        carshare:drivingSickness,
+        carshare:familyFriendlyFeatures,
+        carshare:traffic ;
+    rdfs:domain carshare:TripMetrics ;
+    rdfs:range xsd:integer .
+
+carshare:traffic a rdf:Property ;
+    ns1:predictedLink carshare:RoadConstruction,
+        carshare:familyFriendlyFeatures ;
+    rdfs:domain carshare:TripRequest ;
+    rdfs:range xsd:string .
+
+carshare:constructionLocation a rdf:Property ;
+    ns1:predictedLink carshare:RoadConstruction,
+        carshare:Vehicle,
+        carshare:accountType,
+        carshare:drivingSickness,
+        carshare:familyFriendlyFeatures,
+        carshare:fuel,
+        carshare:traffic ;
+    rdfs:domain carshare:RoadConstruction ;
+    rdfs:range xsd:string .
+
+carshare:accountType a rdf:Property ;
+    rdfs:domain carshare:Client ;
+    rdfs:range xsd:string .
+
+carshare:drivingSickness a rdf:Property ;
+    ns1:predictedLink carshare:RoadConstruction,
+        carshare:Vehicle,
+        carshare:accountType,
+        carshare:traffic ;
+    rdfs:domain carshare:Client ;
+    rdfs:range xsd:string .
+

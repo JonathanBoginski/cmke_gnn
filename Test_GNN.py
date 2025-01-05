@@ -1,10 +1,11 @@
-from rdflib import Graph, URIRef, Literal
+from rdflib import Graph, URIRef
 import torch
 from torch_geometric.data import Data
 from torch_geometric.transforms import RandomLinkSplit
 from torch.nn import Linear, Dropout
 from torch_geometric.nn import GCNConv
 import torch.nn.functional as F
+from itertools import combinations
 
 
 # Function to convert RDF graph to PyTorch Geometric graph
@@ -80,19 +81,13 @@ def evaluate_link_prediction(data, index_to_node):
         return acc
 
 
-# Prepare the mock RDF data
+# Load RDF datasets
 g1 = Graph()
-g1.add((URIRef("http://example.org/Vehicle"), URIRef("http://example.org/hasProperty"), Literal("Wheels")))
-g1.add((URIRef("http://example.org/Vehicle"), URIRef("http://example.org/hasProperty"), Literal("Doors")))
-g1.add((URIRef("http://example.org/Car"), URIRef("http://example.org/isA"), URIRef("http://example.org/Vehicle")))
-g1.add((URIRef("http://example.org/Car"), URIRef("http://example.org/hasEngine"), Literal("DieselEngine")))
-g1.add((URIRef("http://example.org/Truck"), URIRef("http://example.org/hasProperty"), Literal("CargoSpace")))
-
 g2 = Graph()
-g2.add((URIRef("http://example.org/Bike"), URIRef("http://example.org/isA"), URIRef("http://example.org/Vehicle")))
-g2.add((URIRef("http://example.org/Bike"), URIRef("http://example.org/hasProperty"), Literal("Handlebar")))
-g2.add((URIRef("http://example.org/Motorcycle"), URIRef("http://example.org/isA"), URIRef("http://example.org/Bike")))
-g2.add((URIRef("http://example.org/Motorcycle"), URIRef("http://example.org/hasEngine"), Literal("TwoStrokeEngine")))
+
+# Parse the RDF files
+g1.parse("carshare-schema.ttl", format="turtle")
+g2.parse("open_data_car_properties.ttl", format="turtle")
 
 # Convert RDF graphs to PyTorch Geometric graphs
 global_nodes = {}
@@ -147,3 +142,43 @@ for epoch in range(1, 101):
 print("\nTest Links:")
 test_acc = evaluate_link_prediction(test_data, index_to_node)
 print(f"Test Accuracy: {test_acc:.4f}")
+
+
+# Generate candidate links for carshare-schema
+nodes_in_carshare = [node for node in global_nodes.keys() if "carshare" in str(node)]
+carshare_indices = [global_nodes[node] for node in nodes_in_carshare]
+
+# Generate all possible pairs of nodes in carshare-schema
+candidate_links = list(combinations(carshare_indices, 2))
+candidate_edge_index = torch.tensor(candidate_links, dtype=torch.long).t().contiguous()
+
+# Predict probabilities for candidate links
+model.eval()
+with torch.no_grad():
+    z = model.encode(combined_data.x, combined_data.edge_index)
+    preds = model.decode(z, candidate_edge_index).sigmoid()
+
+# Filter predictions above a certain threshold
+threshold = 0.9
+high_probability_indices = preds > threshold
+high_probability_links = candidate_edge_index[:, high_probability_indices]
+
+# Print high-probability predicted links
+print("\nHigh-Probability Missing Links (Probability > 90%):")
+for i, (src, dst) in enumerate(high_probability_links.t().tolist()):
+    src_name = index_to_node[src]
+    dst_name = index_to_node[dst]
+    probability = preds[high_probability_indices][i].item()  # Use filtered probabilities
+    print(f"Predicted Link: {src_name} -> {dst_name}, Probability: {probability:.4f}")
+
+# Define the predictedLink predicate
+predicted_link_predicate = URIRef("http://example.org/predictedLink")
+
+# Add high-probability links to the carshare-schema graph
+for src, dst in high_probability_links.t().tolist():
+    g1.add((index_to_node[src], predicted_link_predicate, index_to_node[dst]))
+
+# Save the enriched graph
+g1.serialize("enriched_carshare-schema.ttl", format="turtle")
+
+print("\nEnriched graph saved as 'enriched_carshare-schema.ttl'")
