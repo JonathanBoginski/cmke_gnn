@@ -1,26 +1,27 @@
 # cmke_gnn
 
-Commands to run the application:
+## Commands to Run the Application
 
-docker build -t cmke_gnn .
-docker run -p 8001:8001 --name cmke_gnn cmke_gnn
-http://localhost:8001/docs
+1. **Build the Docker Image:**
+   ```bash
+   docker build -t cmke_gnn .
+   ```
 
-# to do
-readme
-dockerfile
-openai documentation swaggerui
+2. **Run the Docker Container:**
+   ```bash
+   docker run -p 8001:8001 --name cmke_gnn cmke_gnn
+   ```
 
-endpoints
-/predictlinks
+3. **Access the Application:**
+   Open your browser and navigate to:
+   ```
+   http://localhost:8001/docs
+   ```
 
+---
 
-predict
-gnn python aufrufen
-print statmnt in return
+## To-Do
+- Improve the `README.md`
+- opendata Endpunkt aufsetzen
+- Visualisierung vom enriched `.ttl` file
 
-opendata
-aufsetzen
-
-enriched .ttl visuell aufrufen
-(nicht alle properties vergleichen)
