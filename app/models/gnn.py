@@ -5,7 +5,7 @@ from torch_geometric.transforms import RandomLinkSplit
 from torch.nn import Linear, Dropout
 from torch_geometric.nn import GCNConv
 import torch.nn.functional as F
-from itertools import combinations
+from itertools import product  # Used for cross-graph candidate link generation
 
 
 # Function to convert RDF graph to PyTorch Geometric graph
@@ -54,31 +54,6 @@ class SimpleGNN(torch.nn.Module):
     def forward(self, data):
         z = self.encode(data.x, data.edge_index)
         return self.decode(z, data.edge_index)
-
-
-# Function to evaluate link prediction with node names
-def evaluate_link_prediction(data, index_to_node):
-    model.eval()
-
-    with torch.no_grad():
-        # Encode node embeddings
-        z = model.encode(data.x, data.edge_index)
-
-        # Decode link probabilities
-        edge_label_index = data.edge_label_index
-        edge_labels = data.edge_label  # True labels (1 for positive, 0 for negative)
-        preds = model.decode(z, edge_label_index).sigmoid()  # Predicted probabilities
-
-        # Print link probabilities and their corresponding true labels with node names
-        print("Predicted Links:")
-        for i, (src, dst) in enumerate(edge_label_index.t().tolist()):
-            src_name = index_to_node[src]  # Get the source node name
-            dst_name = index_to_node[dst]  # Get the destination node name
-            print(f"Link ({src_name} -> {dst_name}): Predicted probability = {preds[i]:.4f}, True label = {edge_labels[i].item()}")
-
-        # Compute accuracy
-        acc = ((preds > 0.5) == edge_labels).sum().item() / edge_labels.size(0)
-        return acc
 
 
 # Load RDF datasets
@@ -134,37 +109,30 @@ for epoch in range(1, 101):
     loss = train()
     if epoch % 10 == 0:
         print(f"Epoch: {epoch:03d}, Loss: {loss:.4f}")
-        print("\nValidation Links:")
-        val_acc = evaluate_link_prediction(val_data, index_to_node)
-        print(f"Validation Accuracy: {val_acc:.4f}")
 
-# Test the model
-print("\nTest Links:")
-test_acc = evaluate_link_prediction(test_data, index_to_node)
-print(f"Test Accuracy: {test_acc:.4f}")
+# Generate cross-graph candidate links
+nodes_in_g1 = [node for node in global_nodes.keys() if "carshare" in str(node)]
+nodes_in_g2 = [node for node in global_nodes.keys() if "dbpedia" in str(node)]
+g1_indices = [global_nodes[node] for node in nodes_in_g1]
+g2_indices = [global_nodes[node] for node in nodes_in_g2]
 
-
-# Generate candidate links for carshare-schema
-nodes_in_carshare = [node for node in global_nodes.keys() if "carshare" in str(node)]
-carshare_indices = [global_nodes[node] for node in nodes_in_carshare]
-
-# Generate all possible pairs of nodes in carshare-schema
-candidate_links = list(combinations(carshare_indices, 2))
+# Create candidate links between all pairs of nodes in g1 and g2
+candidate_links = list(product(g1_indices, g2_indices))
 candidate_edge_index = torch.tensor(candidate_links, dtype=torch.long).t().contiguous()
 
-# Predict probabilities for candidate links
+# Predict probabilities for cross-graph candidate links
 model.eval()
 with torch.no_grad():
     z = model.encode(combined_data.x, combined_data.edge_index)
     preds = model.decode(z, candidate_edge_index).sigmoid()
 
-# Filter predictions above a certain threshold
-threshold = 0.9
+# Filter high-probability links
+threshold = 0.95
 high_probability_indices = preds > threshold
 high_probability_links = candidate_edge_index[:, high_probability_indices]
 
 # Print high-probability predicted links
-print("\nHigh-Probability Missing Links (Probability > 90%):")
+print("\nHigh-Probability Cross-Graph Links (Probability > 95%):")
 for i, (src, dst) in enumerate(high_probability_links.t().tolist()):
     src_name = index_to_node[src]
     dst_name = index_to_node[dst]
