@@ -8,118 +8,75 @@ carshare:Client a rdfs:Class ;
     ns1:predictedLink <http://dbpedia.org/ontology/Automobile/wheelbase>,
         <http://dbpedia.org/ontology/MeanOfTransportation/height>,
         <http://dbpedia.org/ontology/MeanOfTransportation/length>,
-        <http://dbpedia.org/ontology/MeanOfTransportation/weight>,
         <http://dbpedia.org/ontology/MeanOfTransportation/width>,
         <http://dbpedia.org/ontology/abstract>,
+        <http://dbpedia.org/ontology/alternativeName>,
+        <http://dbpedia.org/ontology/battery>,
         <http://dbpedia.org/ontology/height>,
         <http://dbpedia.org/ontology/range>,
         <http://dbpedia.org/ontology/sales>,
-        <http://dbpedia.org/ontology/thumbnail>,
         <http://dbpedia.org/ontology/wikiPageLength>,
+        <http://dbpedia.org/property/aka>,
         <http://dbpedia.org/property/align>,
         <http://dbpedia.org/property/assembly>,
         <http://dbpedia.org/property/battery>,
         <http://dbpedia.org/property/bodyStyle>,
-        <http://dbpedia.org/property/caption>,
+        <http://dbpedia.org/property/chassis>,
+        <http://dbpedia.org/property/class>,
+        <http://dbpedia.org/property/date>,
         <http://dbpedia.org/property/designer>,
+        <http://dbpedia.org/property/direction>,
         <http://dbpedia.org/property/drivetrain>,
-        <http://dbpedia.org/property/engine>,
         <http://dbpedia.org/property/footer>,
+        <http://dbpedia.org/property/height>,
         <http://dbpedia.org/property/image>,
         <http://dbpedia.org/property/layout>,
+        <http://dbpedia.org/property/length>,
         <http://dbpedia.org/property/manufacturer>,
         <http://dbpedia.org/property/modelYears>,
         <http://dbpedia.org/property/motor>,
-        <http://dbpedia.org/property/name>,
         <http://dbpedia.org/property/platform>,
         <http://dbpedia.org/property/predecessor>,
-        <http://dbpedia.org/property/production>,
         <http://dbpedia.org/property/reason>,
         <http://dbpedia.org/property/related>,
         <http://dbpedia.org/property/sp>,
         <http://dbpedia.org/property/successor>,
-        <http://dbpedia.org/property/title>,
         <http://dbpedia.org/property/totalWidth>,
         <http://dbpedia.org/property/transmission>,
         <http://dbpedia.org/property/url>,
-        <http://dbpedia.org/property/width> .
+        <http://dbpedia.org/property/weight>,
+        <http://dbpedia.org/property/wheelbase> .
 
 carshare:RoadConstruction a rdfs:Class ;
-    ns1:predictedLink <http://dbpedia.org/ontology/Automobile/wheelbase>,
-        <http://dbpedia.org/ontology/MeanOfTransportation/height>,
+    ns1:predictedLink <http://dbpedia.org/ontology/MeanOfTransportation/height>,
         <http://dbpedia.org/ontology/MeanOfTransportation/length>,
         <http://dbpedia.org/ontology/MeanOfTransportation/weight>,
         <http://dbpedia.org/ontology/MeanOfTransportation/width>,
-        <http://dbpedia.org/ontology/abstract>,
-        <http://dbpedia.org/ontology/height>,
-        <http://dbpedia.org/ontology/range>,
+        <http://dbpedia.org/ontology/automobilePlatform>,
+        <http://dbpedia.org/ontology/battery>,
         <http://dbpedia.org/ontology/sales>,
-        <http://dbpedia.org/ontology/thumbnail>,
-        <http://dbpedia.org/ontology/wikiPageLength>,
         <http://dbpedia.org/property/align>,
-        <http://dbpedia.org/property/assembly>,
-        <http://dbpedia.org/property/battery>,
-        <http://dbpedia.org/property/bodyStyle>,
         <http://dbpedia.org/property/caption>,
-        <http://dbpedia.org/property/designer>,
-        <http://dbpedia.org/property/drivetrain>,
+        <http://dbpedia.org/property/direction>,
         <http://dbpedia.org/property/engine>,
         <http://dbpedia.org/property/footer>,
-        <http://dbpedia.org/property/image>,
-        <http://dbpedia.org/property/layout>,
-        <http://dbpedia.org/property/manufacturer>,
-        <http://dbpedia.org/property/motor>,
-        <http://dbpedia.org/property/name>,
-        <http://dbpedia.org/property/platform>,
-        <http://dbpedia.org/property/predecessor>,
-        <http://dbpedia.org/property/production>,
-        <http://dbpedia.org/property/reason>,
         <http://dbpedia.org/property/related>,
         <http://dbpedia.org/property/sp>,
-        <http://dbpedia.org/property/successor>,
         <http://dbpedia.org/property/title>,
-        <http://dbpedia.org/property/totalWidth>,
-        <http://dbpedia.org/property/transmission>,
-        <http://dbpedia.org/property/url>,
+        <http://dbpedia.org/property/wheelbase>,
         <http://dbpedia.org/property/width> .
 
 carshare:RoadSegment a rdfs:Class ;
-    ns1:predictedLink <http://dbpedia.org/ontology/Automobile/wheelbase>,
-        <http://dbpedia.org/ontology/MeanOfTransportation/height>,
+    ns1:predictedLink <http://dbpedia.org/ontology/MeanOfTransportation/height>,
         <http://dbpedia.org/ontology/MeanOfTransportation/length>,
         <http://dbpedia.org/ontology/MeanOfTransportation/weight>,
-        <http://dbpedia.org/ontology/MeanOfTransportation/width>,
-        <http://dbpedia.org/ontology/abstract>,
-        <http://dbpedia.org/ontology/height>,
-        <http://dbpedia.org/ontology/range>,
-        <http://dbpedia.org/ontology/sales>,
-        <http://dbpedia.org/ontology/thumbnail>,
-        <http://dbpedia.org/ontology/wikiPageLength>,
-        <http://dbpedia.org/property/align>,
-        <http://dbpedia.org/property/assembly>,
-        <http://dbpedia.org/property/battery>,
-        <http://dbpedia.org/property/bodyStyle>,
+        <http://dbpedia.org/ontology/automobilePlatform>,
+        <http://dbpedia.org/ontology/battery>,
         <http://dbpedia.org/property/caption>,
-        <http://dbpedia.org/property/designer>,
-        <http://dbpedia.org/property/drivetrain>,
         <http://dbpedia.org/property/engine>,
         <http://dbpedia.org/property/footer>,
-        <http://dbpedia.org/property/image>,
-        <http://dbpedia.org/property/layout>,
-        <http://dbpedia.org/property/manufacturer>,
-        <http://dbpedia.org/property/motor>,
-        <http://dbpedia.org/property/name>,
-        <http://dbpedia.org/property/platform>,
-        <http://dbpedia.org/property/predecessor>,
-        <http://dbpedia.org/property/production>,
-        <http://dbpedia.org/property/reason>,
         <http://dbpedia.org/property/related>,
-        <http://dbpedia.org/property/sp>,
-        <http://dbpedia.org/property/successor>,
         <http://dbpedia.org/property/title>,
-        <http://dbpedia.org/property/totalWidth>,
-        <http://dbpedia.org/property/transmission>,
-        <http://dbpedia.org/property/url>,
         <http://dbpedia.org/property/width> .
 
 carshare:TripMetrics a rdfs:Class ;
@@ -129,337 +86,280 @@ carshare:TripMetrics a rdfs:Class ;
         <http://dbpedia.org/ontology/MeanOfTransportation/weight>,
         <http://dbpedia.org/ontology/MeanOfTransportation/width>,
         <http://dbpedia.org/ontology/abstract>,
+        <http://dbpedia.org/ontology/alternativeName>,
+        <http://dbpedia.org/ontology/battery>,
         <http://dbpedia.org/ontology/height>,
         <http://dbpedia.org/ontology/range>,
         <http://dbpedia.org/ontology/sales>,
-        <http://dbpedia.org/ontology/thumbnail>,
         <http://dbpedia.org/ontology/wikiPageLength>,
+        <http://dbpedia.org/property/aka>,
         <http://dbpedia.org/property/align>,
         <http://dbpedia.org/property/assembly>,
         <http://dbpedia.org/property/battery>,
         <http://dbpedia.org/property/bodyStyle>,
-        <http://dbpedia.org/property/caption>,
+        <http://dbpedia.org/property/chassis>,
+        <http://dbpedia.org/property/class>,
+        <http://dbpedia.org/property/date>,
         <http://dbpedia.org/property/designer>,
+        <http://dbpedia.org/property/direction>,
         <http://dbpedia.org/property/drivetrain>,
-        <http://dbpedia.org/property/engine>,
         <http://dbpedia.org/property/footer>,
+        <http://dbpedia.org/property/height>,
         <http://dbpedia.org/property/image>,
         <http://dbpedia.org/property/layout>,
+        <http://dbpedia.org/property/length>,
         <http://dbpedia.org/property/manufacturer>,
         <http://dbpedia.org/property/modelYears>,
         <http://dbpedia.org/property/motor>,
-        <http://dbpedia.org/property/name>,
         <http://dbpedia.org/property/platform>,
         <http://dbpedia.org/property/predecessor>,
-        <http://dbpedia.org/property/production>,
         <http://dbpedia.org/property/reason>,
         <http://dbpedia.org/property/related>,
         <http://dbpedia.org/property/sp>,
         <http://dbpedia.org/property/successor>,
-        <http://dbpedia.org/property/title>,
         <http://dbpedia.org/property/totalWidth>,
-        <http://dbpedia.org/property/url>,
-        <http://dbpedia.org/property/width> .
+        <http://dbpedia.org/property/transmission>,
+        <http://dbpedia.org/property/weight>,
+        <http://dbpedia.org/property/wheelbase> .
 
 carshare:TripRequest a rdfs:Class ;
-    ns1:predictedLink <http://dbpedia.org/ontology/Automobile/wheelbase>,
-        <http://dbpedia.org/ontology/MeanOfTransportation/height>,
-        <http://dbpedia.org/ontology/abstract>,
-        <http://dbpedia.org/ontology/range>,
+    ns1:predictedLink <http://dbpedia.org/ontology/MeanOfTransportation/width>,
+        <http://dbpedia.org/ontology/thumbnail>,
+        <http://dbpedia.org/property/align>,
+        <http://dbpedia.org/property/battery>,
+        <http://dbpedia.org/property/direction>,
+        <http://dbpedia.org/property/footer>,
+        <http://dbpedia.org/property/platform>,
+        <http://dbpedia.org/property/sp>,
+        <http://dbpedia.org/property/weight>,
+        <http://dbpedia.org/property/wheelbase> .
+
+carshare:Vehicle a rdfs:Class ;
+    ns1:predictedLink <http://dbpedia.org/property/title> .
+
+carshare:accountType a rdf:Property ;
+    ns1:predictedLink <http://dbpedia.org/ontology/MeanOfTransportation/width>,
+        <http://dbpedia.org/ontology/height>,
         <http://dbpedia.org/ontology/sales>,
+        <http://dbpedia.org/ontology/thumbnail>,
+        <http://dbpedia.org/property/aka>,
         <http://dbpedia.org/property/align>,
         <http://dbpedia.org/property/assembly>,
         <http://dbpedia.org/property/battery>,
+        <http://dbpedia.org/property/class>,
         <http://dbpedia.org/property/designer>,
-        <http://dbpedia.org/property/engine>,
-        <http://dbpedia.org/property/footer>,
-        <http://dbpedia.org/property/image>,
-        <http://dbpedia.org/property/manufacturer>,
+        <http://dbpedia.org/property/height>,
         <http://dbpedia.org/property/motor>,
         <http://dbpedia.org/property/name>,
         <http://dbpedia.org/property/platform>,
-        <http://dbpedia.org/property/predecessor>,
         <http://dbpedia.org/property/reason>,
-        <http://dbpedia.org/property/related>,
-        <http://dbpedia.org/property/sp>,
-        <http://dbpedia.org/property/totalWidth>,
         <http://dbpedia.org/property/url>,
-        <http://dbpedia.org/property/width> .
-
-carshare:Vehicle a rdfs:Class .
-
-carshare:accountType a rdf:Property ;
+        <http://dbpedia.org/property/weight>,
+        <http://dbpedia.org/property/wheelbase> ;
     rdfs:domain carshare:Client ;
     rdfs:range xsd:string .
 
 carshare:age a rdf:Property ;
-    ns1:predictedLink <http://dbpedia.org/ontology/automobilePlatform>,
+    ns1:predictedLink <http://dbpedia.org/ontology/height>,
+        <http://dbpedia.org/ontology/sales>,
         <http://dbpedia.org/property/aka>,
-        <http://dbpedia.org/property/chassis>,
+        <http://dbpedia.org/property/align>,
+        <http://dbpedia.org/property/assembly>,
+        <http://dbpedia.org/property/battery>,
         <http://dbpedia.org/property/class>,
-        <http://dbpedia.org/property/date>,
-        <http://dbpedia.org/property/direction>,
-        <http://dbpedia.org/property/length>,
+        <http://dbpedia.org/property/designer>,
+        <http://dbpedia.org/property/height>,
+        <http://dbpedia.org/property/modelYears>,
+        <http://dbpedia.org/property/motor>,
+        <http://dbpedia.org/property/platform>,
+        <http://dbpedia.org/property/reason>,
+        <http://dbpedia.org/property/url>,
         <http://dbpedia.org/property/weight>,
         <http://dbpedia.org/property/wheelbase> ;
     rdfs:domain carshare:Client ;
     rdfs:range xsd:integer .
 
 carshare:carMaintenanceHistory a rdf:Property ;
-    ns1:predictedLink <http://dbpedia.org/ontology/Automobile/wheelbase>,
-        <http://dbpedia.org/ontology/MeanOfTransportation/height>,
-        <http://dbpedia.org/ontology/abstract>,
-        <http://dbpedia.org/ontology/range>,
+    ns1:predictedLink <http://dbpedia.org/ontology/MeanOfTransportation/height>,
+        <http://dbpedia.org/ontology/MeanOfTransportation/length>,
+        <http://dbpedia.org/ontology/MeanOfTransportation/weight>,
+        <http://dbpedia.org/ontology/battery>,
+        <http://dbpedia.org/ontology/height>,
         <http://dbpedia.org/ontology/sales>,
         <http://dbpedia.org/property/align>,
-        <http://dbpedia.org/property/assembly>,
         <http://dbpedia.org/property/battery>,
+        <http://dbpedia.org/property/caption>,
         <http://dbpedia.org/property/designer>,
+        <http://dbpedia.org/property/direction>,
         <http://dbpedia.org/property/engine>,
         <http://dbpedia.org/property/footer>,
-        <http://dbpedia.org/property/image>,
         <http://dbpedia.org/property/modelYears>,
         <http://dbpedia.org/property/motor>,
-        <http://dbpedia.org/property/name>,
-        <http://dbpedia.org/property/platform>,
-        <http://dbpedia.org/property/predecessor>,
         <http://dbpedia.org/property/reason>,
         <http://dbpedia.org/property/related>,
         <http://dbpedia.org/property/sp>,
-        <http://dbpedia.org/property/totalWidth>,
-        <http://dbpedia.org/property/url>,
+        <http://dbpedia.org/property/wheelbase>,
         <http://dbpedia.org/property/width> ;
     rdfs:domain carshare:TripMetrics ;
     rdfs:range xsd:integer .
 
 carshare:clientID a rdf:Property ;
-    ns1:predictedLink <http://dbpedia.org/ontology/Automobile/wheelbase>,
-        <http://dbpedia.org/ontology/MeanOfTransportation/height>,
-        <http://dbpedia.org/ontology/abstract>,
-        <http://dbpedia.org/ontology/range>,
-        <http://dbpedia.org/ontology/sales>,
-        <http://dbpedia.org/property/align>,
-        <http://dbpedia.org/property/assembly>,
-        <http://dbpedia.org/property/battery>,
-        <http://dbpedia.org/property/designer>,
+    ns1:predictedLink <http://dbpedia.org/ontology/MeanOfTransportation/length>,
+        <http://dbpedia.org/ontology/MeanOfTransportation/weight>,
+        <http://dbpedia.org/ontology/automobilePlatform>,
+        <http://dbpedia.org/ontology/battery>,
+        <http://dbpedia.org/property/caption>,
         <http://dbpedia.org/property/engine>,
         <http://dbpedia.org/property/footer>,
-        <http://dbpedia.org/property/image>,
-        <http://dbpedia.org/property/manufacturer>,
-        <http://dbpedia.org/property/motor>,
-        <http://dbpedia.org/property/name>,
-        <http://dbpedia.org/property/platform>,
-        <http://dbpedia.org/property/predecessor>,
-        <http://dbpedia.org/property/reason>,
         <http://dbpedia.org/property/related>,
-        <http://dbpedia.org/property/sp>,
-        <http://dbpedia.org/property/totalWidth>,
-        <http://dbpedia.org/property/transmission>,
-        <http://dbpedia.org/property/url>,
+        <http://dbpedia.org/property/title>,
         <http://dbpedia.org/property/width> ;
     rdfs:domain carshare:Client ;
     rdfs:range xsd:string .
 
 carshare:comfortImportance a rdf:Property ;
-    ns1:predictedLink <http://dbpedia.org/ontology/Automobile/wheelbase>,
-        <http://dbpedia.org/ontology/MeanOfTransportation/height>,
-        <http://dbpedia.org/ontology/abstract>,
-        <http://dbpedia.org/ontology/range>,
-        <http://dbpedia.org/ontology/sales>,
-        <http://dbpedia.org/property/align>,
-        <http://dbpedia.org/property/assembly>,
-        <http://dbpedia.org/property/battery>,
-        <http://dbpedia.org/property/designer>,
-        <http://dbpedia.org/property/engine>,
-        <http://dbpedia.org/property/footer>,
-        <http://dbpedia.org/property/image>,
-        <http://dbpedia.org/property/manufacturer>,
-        <http://dbpedia.org/property/modelYears>,
-        <http://dbpedia.org/property/motor>,
-        <http://dbpedia.org/property/name>,
-        <http://dbpedia.org/property/platform>,
-        <http://dbpedia.org/property/predecessor>,
-        <http://dbpedia.org/property/reason>,
-        <http://dbpedia.org/property/related>,
-        <http://dbpedia.org/property/sp>,
-        <http://dbpedia.org/property/totalWidth>,
-        <http://dbpedia.org/property/url>,
-        <http://dbpedia.org/property/width> ;
     rdfs:domain carshare:Client ;
     rdfs:range xsd:string .
 
 carshare:constructionID a rdf:Property ;
-    ns1:predictedLink <http://dbpedia.org/ontology/Automobile/wheelbase>,
-        <http://dbpedia.org/ontology/MeanOfTransportation/height>,
-        <http://dbpedia.org/ontology/abstract>,
-        <http://dbpedia.org/ontology/range>,
-        <http://dbpedia.org/ontology/sales>,
+    ns1:predictedLink <http://dbpedia.org/ontology/MeanOfTransportation/width>,
+        <http://dbpedia.org/ontology/thumbnail>,
         <http://dbpedia.org/property/align>,
-        <http://dbpedia.org/property/assembly>,
-        <http://dbpedia.org/property/battery>,
-        <http://dbpedia.org/property/designer>,
-        <http://dbpedia.org/property/engine>,
-        <http://dbpedia.org/property/footer>,
-        <http://dbpedia.org/property/image>,
-        <http://dbpedia.org/property/manufacturer>,
-        <http://dbpedia.org/property/motor>,
-        <http://dbpedia.org/property/name>,
+        <http://dbpedia.org/property/direction>,
         <http://dbpedia.org/property/platform>,
-        <http://dbpedia.org/property/predecessor>,
-        <http://dbpedia.org/property/reason>,
-        <http://dbpedia.org/property/related>,
-        <http://dbpedia.org/property/sp>,
-        <http://dbpedia.org/property/totalWidth>,
-        <http://dbpedia.org/property/url>,
-        <http://dbpedia.org/property/width> ;
+        <http://dbpedia.org/property/weight> ;
     rdfs:domain carshare:RoadConstruction ;
     rdfs:range xsd:string .
 
 carshare:constructionLocation a rdf:Property ;
-    ns1:predictedLink <http://dbpedia.org/ontology/Automobile/wheelbase>,
-        <http://dbpedia.org/ontology/MeanOfTransportation/height>,
-        <http://dbpedia.org/ontology/abstract>,
-        <http://dbpedia.org/ontology/range>,
+    ns1:predictedLink <http://dbpedia.org/ontology/MeanOfTransportation/height>,
+        <http://dbpedia.org/ontology/MeanOfTransportation/length>,
+        <http://dbpedia.org/ontology/MeanOfTransportation/weight>,
+        <http://dbpedia.org/ontology/automobilePlatform>,
+        <http://dbpedia.org/ontology/battery>,
         <http://dbpedia.org/ontology/sales>,
-        <http://dbpedia.org/property/align>,
-        <http://dbpedia.org/property/assembly>,
-        <http://dbpedia.org/property/battery>,
+        <http://dbpedia.org/property/caption>,
         <http://dbpedia.org/property/designer>,
         <http://dbpedia.org/property/engine>,
         <http://dbpedia.org/property/footer>,
-        <http://dbpedia.org/property/image>,
-        <http://dbpedia.org/property/manufacturer>,
-        <http://dbpedia.org/property/motor>,
-        <http://dbpedia.org/property/name>,
-        <http://dbpedia.org/property/platform>,
-        <http://dbpedia.org/property/predecessor>,
+        <http://dbpedia.org/property/modelYears>,
         <http://dbpedia.org/property/reason>,
         <http://dbpedia.org/property/related>,
         <http://dbpedia.org/property/sp>,
-        <http://dbpedia.org/property/totalWidth>,
-        <http://dbpedia.org/property/transmission>,
-        <http://dbpedia.org/property/url>,
+        <http://dbpedia.org/property/title>,
+        <http://dbpedia.org/property/wheelbase>,
         <http://dbpedia.org/property/width> ;
     rdfs:domain carshare:RoadConstruction ;
     rdfs:range xsd:string .
 
 carshare:dayOfWeek a rdf:Property ;
-    ns1:predictedLink <http://dbpedia.org/ontology/automobilePlatform>,
-        <http://dbpedia.org/ontology/battery>,
-        <http://dbpedia.org/property/aka>,
-        <http://dbpedia.org/property/chassis>,
-        <http://dbpedia.org/property/class>,
-        <http://dbpedia.org/property/date>,
-        <http://dbpedia.org/property/direction>,
-        <http://dbpedia.org/property/height>,
-        <http://dbpedia.org/property/length>,
-        <http://dbpedia.org/property/weight>,
-        <http://dbpedia.org/property/wheelbase> ;
     rdfs:domain carshare:TripRequest ;
     rdfs:range xsd:string .
 
 carshare:daytime a rdf:Property ;
-    ns1:predictedLink <http://dbpedia.org/ontology/Automobile/wheelbase>,
-        <http://dbpedia.org/ontology/MeanOfTransportation/height>,
-        <http://dbpedia.org/ontology/abstract>,
-        <http://dbpedia.org/ontology/range>,
-        <http://dbpedia.org/ontology/sales>,
-        <http://dbpedia.org/property/align>,
-        <http://dbpedia.org/property/assembly>,
-        <http://dbpedia.org/property/battery>,
-        <http://dbpedia.org/property/designer>,
-        <http://dbpedia.org/property/engine>,
-        <http://dbpedia.org/property/footer>,
-        <http://dbpedia.org/property/image>,
-        <http://dbpedia.org/property/manufacturer>,
-        <http://dbpedia.org/property/motor>,
-        <http://dbpedia.org/property/name>,
-        <http://dbpedia.org/property/platform>,
-        <http://dbpedia.org/property/predecessor>,
-        <http://dbpedia.org/property/reason>,
-        <http://dbpedia.org/property/related>,
-        <http://dbpedia.org/property/sp>,
-        <http://dbpedia.org/property/totalWidth>,
-        <http://dbpedia.org/property/url>,
-        <http://dbpedia.org/property/width> ;
     rdfs:domain carshare:TripMetrics ;
     rdfs:range xsd:time .
 
 carshare:drivingProficiency a rdf:Property ;
-    ns1:predictedLink <http://dbpedia.org/ontology/Automobile/wheelbase>,
-        <http://dbpedia.org/ontology/MeanOfTransportation/height>,
-        <http://dbpedia.org/ontology/abstract>,
-        <http://dbpedia.org/ontology/range>,
-        <http://dbpedia.org/ontology/sales>,
+    ns1:predictedLink <http://dbpedia.org/ontology/MeanOfTransportation/width>,
+        <http://dbpedia.org/ontology/thumbnail>,
+        <http://dbpedia.org/property/aka>,
         <http://dbpedia.org/property/align>,
         <http://dbpedia.org/property/assembly>,
         <http://dbpedia.org/property/battery>,
-        <http://dbpedia.org/property/designer>,
-        <http://dbpedia.org/property/engine>,
-        <http://dbpedia.org/property/footer>,
-        <http://dbpedia.org/property/image>,
-        <http://dbpedia.org/property/manufacturer>,
+        <http://dbpedia.org/property/class>,
+        <http://dbpedia.org/property/height>,
         <http://dbpedia.org/property/motor>,
         <http://dbpedia.org/property/name>,
         <http://dbpedia.org/property/platform>,
-        <http://dbpedia.org/property/predecessor>,
-        <http://dbpedia.org/property/reason>,
-        <http://dbpedia.org/property/related>,
-        <http://dbpedia.org/property/sp>,
-        <http://dbpedia.org/property/totalWidth>,
+        <http://dbpedia.org/property/production>,
         <http://dbpedia.org/property/url>,
-        <http://dbpedia.org/property/width> ;
+        <http://dbpedia.org/property/weight> ;
     rdfs:domain carshare:Client ;
     rdfs:range xsd:string .
 
 carshare:drivingSickness a rdf:Property ;
-    ns1:predictedLink <http://dbpedia.org/property/class>,
-        <http://dbpedia.org/property/direction>,
-        <http://dbpedia.org/property/wheelbase> ;
     rdfs:domain carshare:Client ;
     rdfs:range xsd:string .
 
 carshare:endLocation a rdf:Property ;
+    ns1:predictedLink <http://dbpedia.org/ontology/MeanOfTransportation/height>,
+        <http://dbpedia.org/ontology/MeanOfTransportation/length>,
+        <http://dbpedia.org/ontology/MeanOfTransportation/weight>,
+        <http://dbpedia.org/ontology/automobilePlatform>,
+        <http://dbpedia.org/ontology/battery>,
+        <http://dbpedia.org/ontology/height>,
+        <http://dbpedia.org/ontology/sales>,
+        <http://dbpedia.org/property/caption>,
+        <http://dbpedia.org/property/designer>,
+        <http://dbpedia.org/property/engine>,
+        <http://dbpedia.org/property/footer>,
+        <http://dbpedia.org/property/modelYears>,
+        <http://dbpedia.org/property/reason>,
+        <http://dbpedia.org/property/related>,
+        <http://dbpedia.org/property/sp>,
+        <http://dbpedia.org/property/wheelbase>,
+        <http://dbpedia.org/property/width> ;
     rdfs:domain carshare:RoadSegment ;
     rdfs:range xsd:string .
 
 carshare:endTime a rdf:Property ;
+    ns1:predictedLink <http://dbpedia.org/ontology/MeanOfTransportation/height>,
+        <http://dbpedia.org/ontology/MeanOfTransportation/length>,
+        <http://dbpedia.org/ontology/MeanOfTransportation/weight>,
+        <http://dbpedia.org/ontology/battery>,
+        <http://dbpedia.org/ontology/height>,
+        <http://dbpedia.org/ontology/sales>,
+        <http://dbpedia.org/property/align>,
+        <http://dbpedia.org/property/battery>,
+        <http://dbpedia.org/property/caption>,
+        <http://dbpedia.org/property/designer>,
+        <http://dbpedia.org/property/direction>,
+        <http://dbpedia.org/property/engine>,
+        <http://dbpedia.org/property/footer>,
+        <http://dbpedia.org/property/modelYears>,
+        <http://dbpedia.org/property/motor>,
+        <http://dbpedia.org/property/reason>,
+        <http://dbpedia.org/property/related>,
+        <http://dbpedia.org/property/sp>,
+        <http://dbpedia.org/property/wheelbase>,
+        <http://dbpedia.org/property/width> ;
     rdfs:domain carshare:TripRequest ;
     rdfs:range xsd:dateTime .
 
 carshare:familyFriendlyFeatures a rdf:Property ;
+    ns1:predictedLink <http://dbpedia.org/ontology/automobilePlatform>,
+        <http://dbpedia.org/ontology/thumbnail>,
+        <http://dbpedia.org/property/name>,
+        <http://dbpedia.org/property/production>,
+        <http://dbpedia.org/property/title> ;
     rdfs:domain carshare:Client ;
     rdfs:range xsd:string .
 
 carshare:fromLocation a rdf:Property ;
-    ns1:predictedLink <http://dbpedia.org/ontology/Automobile/wheelbase>,
-        <http://dbpedia.org/ontology/MeanOfTransportation/height>,
-        <http://dbpedia.org/ontology/abstract>,
-        <http://dbpedia.org/ontology/range>,
-        <http://dbpedia.org/ontology/sales>,
-        <http://dbpedia.org/property/align>,
-        <http://dbpedia.org/property/assembly>,
-        <http://dbpedia.org/property/battery>,
-        <http://dbpedia.org/property/designer>,
-        <http://dbpedia.org/property/engine>,
-        <http://dbpedia.org/property/footer>,
-        <http://dbpedia.org/property/image>,
-        <http://dbpedia.org/property/manufacturer>,
-        <http://dbpedia.org/property/modelYears>,
-        <http://dbpedia.org/property/motor>,
+    ns1:predictedLink <http://dbpedia.org/ontology/automobilePlatform>,
+        <http://dbpedia.org/ontology/thumbnail>,
         <http://dbpedia.org/property/name>,
         <http://dbpedia.org/property/platform>,
-        <http://dbpedia.org/property/predecessor>,
-        <http://dbpedia.org/property/reason>,
-        <http://dbpedia.org/property/related>,
-        <http://dbpedia.org/property/sp>,
-        <http://dbpedia.org/property/totalWidth>,
-        <http://dbpedia.org/property/url>,
-        <http://dbpedia.org/property/width> ;
+        <http://dbpedia.org/property/production>,
+        <http://dbpedia.org/property/title>,
+        <http://dbpedia.org/property/url> ;
     rdfs:domain carshare:TripRequest ;
     rdfs:range xsd:string .
 
 carshare:fuel a rdf:Property ;
+    ns1:predictedLink <http://dbpedia.org/ontology/thumbnail>,
+        <http://dbpedia.org/property/aka>,
+        <http://dbpedia.org/property/assembly>,
+        <http://dbpedia.org/property/battery>,
+        <http://dbpedia.org/property/class>,
+        <http://dbpedia.org/property/height>,
+        <http://dbpedia.org/property/motor>,
+        <http://dbpedia.org/property/name>,
+        <http://dbpedia.org/property/platform>,
+        <http://dbpedia.org/property/production>,
+        <http://dbpedia.org/property/url>,
+        <http://dbpedia.org/property/weight> ;
     rdfs:domain carshare:TripMetrics ;
     rdfs:range xsd:integer .
 
@@ -468,6 +368,23 @@ carshare:fuelTypePreference a rdf:Property ;
     rdfs:range xsd:string .
 
 carshare:gender a rdf:Property ;
+    ns1:predictedLink <http://dbpedia.org/ontology/height>,
+        <http://dbpedia.org/ontology/sales>,
+        <http://dbpedia.org/ontology/thumbnail>,
+        <http://dbpedia.org/property/aka>,
+        <http://dbpedia.org/property/align>,
+        <http://dbpedia.org/property/assembly>,
+        <http://dbpedia.org/property/battery>,
+        <http://dbpedia.org/property/class>,
+        <http://dbpedia.org/property/designer>,
+        <http://dbpedia.org/property/height>,
+        <http://dbpedia.org/property/modelYears>,
+        <http://dbpedia.org/property/motor>,
+        <http://dbpedia.org/property/platform>,
+        <http://dbpedia.org/property/reason>,
+        <http://dbpedia.org/property/url>,
+        <http://dbpedia.org/property/weight>,
+        <http://dbpedia.org/property/wheelbase> ;
     rdfs:domain carshare:Client ;
     rdfs:range xsd:string .
 
@@ -476,33 +393,35 @@ carshare:localEvents a rdf:Property ;
     rdfs:range xsd:string .
 
 carshare:movementType a rdf:Property ;
-    ns1:predictedLink <http://dbpedia.org/ontology/Automobile/wheelbase>,
-        <http://dbpedia.org/ontology/MeanOfTransportation/height>,
-        <http://dbpedia.org/ontology/abstract>,
-        <http://dbpedia.org/ontology/range>,
-        <http://dbpedia.org/ontology/sales>,
-        <http://dbpedia.org/property/align>,
-        <http://dbpedia.org/property/assembly>,
-        <http://dbpedia.org/property/battery>,
-        <http://dbpedia.org/property/designer>,
-        <http://dbpedia.org/property/engine>,
-        <http://dbpedia.org/property/footer>,
-        <http://dbpedia.org/property/image>,
-        <http://dbpedia.org/property/manufacturer>,
-        <http://dbpedia.org/property/motor>,
+    ns1:predictedLink <http://dbpedia.org/ontology/thumbnail>,
         <http://dbpedia.org/property/name>,
-        <http://dbpedia.org/property/platform>,
-        <http://dbpedia.org/property/predecessor>,
-        <http://dbpedia.org/property/reason>,
-        <http://dbpedia.org/property/related>,
-        <http://dbpedia.org/property/sp>,
-        <http://dbpedia.org/property/totalWidth>,
-        <http://dbpedia.org/property/url>,
-        <http://dbpedia.org/property/width> ;
+        <http://dbpedia.org/property/production>,
+        <http://dbpedia.org/property/title>,
+        <http://dbpedia.org/property/url> ;
     rdfs:domain carshare:RoadSegment ;
     rdfs:range xsd:string .
 
 carshare:offRoadCapability a rdf:Property ;
+    ns1:predictedLink <http://dbpedia.org/ontology/MeanOfTransportation/height>,
+        <http://dbpedia.org/ontology/MeanOfTransportation/length>,
+        <http://dbpedia.org/ontology/MeanOfTransportation/weight>,
+        <http://dbpedia.org/ontology/battery>,
+        <http://dbpedia.org/ontology/height>,
+        <http://dbpedia.org/ontology/sales>,
+        <http://dbpedia.org/property/align>,
+        <http://dbpedia.org/property/battery>,
+        <http://dbpedia.org/property/caption>,
+        <http://dbpedia.org/property/designer>,
+        <http://dbpedia.org/property/direction>,
+        <http://dbpedia.org/property/engine>,
+        <http://dbpedia.org/property/footer>,
+        <http://dbpedia.org/property/modelYears>,
+        <http://dbpedia.org/property/motor>,
+        <http://dbpedia.org/property/reason>,
+        <http://dbpedia.org/property/related>,
+        <http://dbpedia.org/property/sp>,
+        <http://dbpedia.org/property/wheelbase>,
+        <http://dbpedia.org/property/width> ;
     rdfs:domain carshare:Client ;
     rdfs:range xsd:string .
 
@@ -511,57 +430,52 @@ carshare:passengerAmount a rdf:Property ;
     rdfs:range xsd:integer .
 
 carshare:poi a rdf:Property ;
-    ns1:predictedLink <http://dbpedia.org/ontology/automobilePlatform>,
-        <http://dbpedia.org/property/chassis>,
+    ns1:predictedLink <http://dbpedia.org/ontology/height>,
+        <http://dbpedia.org/ontology/thumbnail>,
+        <http://dbpedia.org/property/aka>,
+        <http://dbpedia.org/property/align>,
+        <http://dbpedia.org/property/assembly>,
+        <http://dbpedia.org/property/battery>,
         <http://dbpedia.org/property/class>,
-        <http://dbpedia.org/property/date>,
-        <http://dbpedia.org/property/direction>,
-        <http://dbpedia.org/property/length>,
+        <http://dbpedia.org/property/designer>,
+        <http://dbpedia.org/property/height>,
+        <http://dbpedia.org/property/motor>,
+        <http://dbpedia.org/property/platform>,
+        <http://dbpedia.org/property/url>,
+        <http://dbpedia.org/property/weight>,
         <http://dbpedia.org/property/wheelbase> ;
     rdfs:domain carshare:TripMetrics ;
     rdfs:range xsd:float .
 
 carshare:policeRecord a rdf:Property ;
-    ns1:predictedLink <http://dbpedia.org/ontology/automobilePlatform>,
-        <http://dbpedia.org/ontology/battery>,
-        <http://dbpedia.org/property/aka>,
-        <http://dbpedia.org/property/chassis>,
-        <http://dbpedia.org/property/class>,
-        <http://dbpedia.org/property/date>,
-        <http://dbpedia.org/property/direction>,
-        <http://dbpedia.org/property/length>,
-        <http://dbpedia.org/property/wheelbase> ;
     rdfs:domain carshare:Client ;
     rdfs:range xsd:string .
 
 carshare:position a rdf:Property ;
-    ns1:predictedLink <http://dbpedia.org/ontology/Automobile/wheelbase>,
-        <http://dbpedia.org/ontology/MeanOfTransportation/height>,
-        <http://dbpedia.org/ontology/abstract>,
-        <http://dbpedia.org/ontology/range>,
-        <http://dbpedia.org/ontology/sales>,
-        <http://dbpedia.org/property/align>,
-        <http://dbpedia.org/property/assembly>,
-        <http://dbpedia.org/property/battery>,
-        <http://dbpedia.org/property/designer>,
-        <http://dbpedia.org/property/engine>,
-        <http://dbpedia.org/property/footer>,
-        <http://dbpedia.org/property/image>,
-        <http://dbpedia.org/property/manufacturer>,
-        <http://dbpedia.org/property/motor>,
-        <http://dbpedia.org/property/name>,
-        <http://dbpedia.org/property/platform>,
-        <http://dbpedia.org/property/predecessor>,
-        <http://dbpedia.org/property/reason>,
-        <http://dbpedia.org/property/related>,
-        <http://dbpedia.org/property/sp>,
-        <http://dbpedia.org/property/totalWidth>,
-        <http://dbpedia.org/property/url>,
-        <http://dbpedia.org/property/width> ;
     rdfs:domain carshare:Client ;
     rdfs:range xsd:string .
 
 carshare:preferredRouteType a rdf:Property ;
+    ns1:predictedLink <http://dbpedia.org/ontology/MeanOfTransportation/height>,
+        <http://dbpedia.org/ontology/MeanOfTransportation/length>,
+        <http://dbpedia.org/ontology/MeanOfTransportation/weight>,
+        <http://dbpedia.org/ontology/MeanOfTransportation/width>,
+        <http://dbpedia.org/ontology/battery>,
+        <http://dbpedia.org/ontology/height>,
+        <http://dbpedia.org/ontology/sales>,
+        <http://dbpedia.org/property/align>,
+        <http://dbpedia.org/property/battery>,
+        <http://dbpedia.org/property/caption>,
+        <http://dbpedia.org/property/class>,
+        <http://dbpedia.org/property/designer>,
+        <http://dbpedia.org/property/direction>,
+        <http://dbpedia.org/property/footer>,
+        <http://dbpedia.org/property/modelYears>,
+        <http://dbpedia.org/property/motor>,
+        <http://dbpedia.org/property/reason>,
+        <http://dbpedia.org/property/related>,
+        <http://dbpedia.org/property/sp>,
+        <http://dbpedia.org/property/wheelbase> ;
     rdfs:domain carshare:Client ;
     rdfs:range xsd:string .
 
@@ -570,41 +484,58 @@ carshare:preferredSpeed a rdf:Property ;
     rdfs:range xsd:string .
 
 carshare:requestID a rdf:Property ;
-    ns1:predictedLink <http://dbpedia.org/ontology/Automobile/wheelbase>,
-        <http://dbpedia.org/ontology/MeanOfTransportation/height>,
-        <http://dbpedia.org/ontology/abstract>,
-        <http://dbpedia.org/ontology/range>,
-        <http://dbpedia.org/ontology/sales>,
-        <http://dbpedia.org/property/align>,
-        <http://dbpedia.org/property/assembly>,
-        <http://dbpedia.org/property/battery>,
-        <http://dbpedia.org/property/designer>,
-        <http://dbpedia.org/property/engine>,
-        <http://dbpedia.org/property/footer>,
-        <http://dbpedia.org/property/image>,
-        <http://dbpedia.org/property/manufacturer>,
-        <http://dbpedia.org/property/motor>,
-        <http://dbpedia.org/property/name>,
-        <http://dbpedia.org/property/platform>,
-        <http://dbpedia.org/property/predecessor>,
-        <http://dbpedia.org/property/reason>,
-        <http://dbpedia.org/property/related>,
-        <http://dbpedia.org/property/sp>,
-        <http://dbpedia.org/property/totalWidth>,
-        <http://dbpedia.org/property/url>,
-        <http://dbpedia.org/property/width> ;
     rdfs:domain carshare:TripRequest ;
     rdfs:range xsd:string .
 
 carshare:requestedBy a rdf:Property ;
+    ns1:predictedLink <http://dbpedia.org/ontology/thumbnail>,
+        <http://dbpedia.org/property/assembly>,
+        <http://dbpedia.org/property/name>,
+        <http://dbpedia.org/property/platform>,
+        <http://dbpedia.org/property/production>,
+        <http://dbpedia.org/property/url>,
+        <http://dbpedia.org/property/weight> ;
     rdfs:domain carshare:TripRequest ;
     rdfs:range carshare:Client .
 
 carshare:rideTime a rdf:Property ;
+    ns1:predictedLink <http://dbpedia.org/ontology/MeanOfTransportation/height>,
+        <http://dbpedia.org/ontology/MeanOfTransportation/length>,
+        <http://dbpedia.org/ontology/MeanOfTransportation/weight>,
+        <http://dbpedia.org/ontology/MeanOfTransportation/width>,
+        <http://dbpedia.org/ontology/battery>,
+        <http://dbpedia.org/ontology/height>,
+        <http://dbpedia.org/ontology/sales>,
+        <http://dbpedia.org/property/aka>,
+        <http://dbpedia.org/property/align>,
+        <http://dbpedia.org/property/battery>,
+        <http://dbpedia.org/property/caption>,
+        <http://dbpedia.org/property/class>,
+        <http://dbpedia.org/property/designer>,
+        <http://dbpedia.org/property/direction>,
+        <http://dbpedia.org/property/footer>,
+        <http://dbpedia.org/property/height>,
+        <http://dbpedia.org/property/modelYears>,
+        <http://dbpedia.org/property/motor>,
+        <http://dbpedia.org/property/reason>,
+        <http://dbpedia.org/property/related>,
+        <http://dbpedia.org/property/sp>,
+        <http://dbpedia.org/property/wheelbase>,
+        <http://dbpedia.org/property/width> ;
     rdfs:domain carshare:TripMetrics ;
     rdfs:range xsd:integer .
 
 carshare:roadConstructions a rdf:Property ;
+    ns1:predictedLink <http://dbpedia.org/ontology/thumbnail>,
+        <http://dbpedia.org/property/aka>,
+        <http://dbpedia.org/property/assembly>,
+        <http://dbpedia.org/property/class>,
+        <http://dbpedia.org/property/height>,
+        <http://dbpedia.org/property/name>,
+        <http://dbpedia.org/property/platform>,
+        <http://dbpedia.org/property/production>,
+        <http://dbpedia.org/property/url>,
+        <http://dbpedia.org/property/weight> ;
     rdfs:domain carshare:TripRequest ;
     rdfs:range xsd:string .
 
@@ -613,119 +544,124 @@ carshare:safetyImportance a rdf:Property ;
     rdfs:range xsd:string .
 
 carshare:segmentID a rdf:Property ;
-    ns1:predictedLink <http://dbpedia.org/ontology/Automobile/wheelbase>,
-        <http://dbpedia.org/ontology/MeanOfTransportation/height>,
-        <http://dbpedia.org/ontology/abstract>,
-        <http://dbpedia.org/ontology/range>,
-        <http://dbpedia.org/ontology/sales>,
-        <http://dbpedia.org/property/align>,
-        <http://dbpedia.org/property/assembly>,
-        <http://dbpedia.org/property/battery>,
-        <http://dbpedia.org/property/designer>,
+    ns1:predictedLink <http://dbpedia.org/ontology/MeanOfTransportation/weight>,
+        <http://dbpedia.org/ontology/automobilePlatform>,
+        <http://dbpedia.org/property/caption>,
         <http://dbpedia.org/property/engine>,
-        <http://dbpedia.org/property/footer>,
-        <http://dbpedia.org/property/image>,
-        <http://dbpedia.org/property/manufacturer>,
-        <http://dbpedia.org/property/motor>,
-        <http://dbpedia.org/property/name>,
-        <http://dbpedia.org/property/platform>,
-        <http://dbpedia.org/property/predecessor>,
-        <http://dbpedia.org/property/reason>,
-        <http://dbpedia.org/property/related>,
-        <http://dbpedia.org/property/sp>,
-        <http://dbpedia.org/property/totalWidth>,
-        <http://dbpedia.org/property/url>,
+        <http://dbpedia.org/property/title>,
         <http://dbpedia.org/property/width> ;
     rdfs:domain carshare:RoadSegment ;
     rdfs:range xsd:string .
 
 carshare:startLocation a rdf:Property ;
+    ns1:predictedLink <http://dbpedia.org/ontology/MeanOfTransportation/height>,
+        <http://dbpedia.org/ontology/MeanOfTransportation/length>,
+        <http://dbpedia.org/ontology/MeanOfTransportation/weight>,
+        <http://dbpedia.org/ontology/automobilePlatform>,
+        <http://dbpedia.org/ontology/battery>,
+        <http://dbpedia.org/property/caption>,
+        <http://dbpedia.org/property/engine>,
+        <http://dbpedia.org/property/footer>,
+        <http://dbpedia.org/property/related>,
+        <http://dbpedia.org/property/sp>,
+        <http://dbpedia.org/property/title>,
+        <http://dbpedia.org/property/wheelbase>,
+        <http://dbpedia.org/property/width> ;
     rdfs:domain carshare:RoadSegment ;
     rdfs:range xsd:string .
 
 carshare:startTime a rdf:Property ;
-    ns1:predictedLink <http://dbpedia.org/ontology/automobilePlatform>,
+    ns1:predictedLink <http://dbpedia.org/ontology/thumbnail>,
         <http://dbpedia.org/property/aka>,
-        <http://dbpedia.org/property/chassis>,
+        <http://dbpedia.org/property/assembly>,
         <http://dbpedia.org/property/class>,
-        <http://dbpedia.org/property/date>,
-        <http://dbpedia.org/property/direction>,
-        <http://dbpedia.org/property/length>,
-        <http://dbpedia.org/property/weight>,
-        <http://dbpedia.org/property/wheelbase> ;
+        <http://dbpedia.org/property/height>,
+        <http://dbpedia.org/property/motor>,
+        <http://dbpedia.org/property/name>,
+        <http://dbpedia.org/property/platform>,
+        <http://dbpedia.org/property/production>,
+        <http://dbpedia.org/property/url>,
+        <http://dbpedia.org/property/weight> ;
     rdfs:domain carshare:TripRequest ;
     rdfs:range xsd:dateTime .
 
 carshare:status a rdf:Property ;
-    ns1:predictedLink <http://dbpedia.org/ontology/automobilePlatform>,
+    ns1:predictedLink <http://dbpedia.org/ontology/MeanOfTransportation/height>,
+        <http://dbpedia.org/ontology/MeanOfTransportation/length>,
+        <http://dbpedia.org/ontology/MeanOfTransportation/weight>,
         <http://dbpedia.org/ontology/battery>,
-        <http://dbpedia.org/property/aka>,
-        <http://dbpedia.org/property/chassis>,
-        <http://dbpedia.org/property/class>,
-        <http://dbpedia.org/property/date>,
+        <http://dbpedia.org/ontology/height>,
+        <http://dbpedia.org/ontology/sales>,
+        <http://dbpedia.org/property/align>,
+        <http://dbpedia.org/property/battery>,
+        <http://dbpedia.org/property/caption>,
+        <http://dbpedia.org/property/designer>,
         <http://dbpedia.org/property/direction>,
-        <http://dbpedia.org/property/height>,
-        <http://dbpedia.org/property/length>,
-        <http://dbpedia.org/property/weight>,
-        <http://dbpedia.org/property/wheelbase> ;
+        <http://dbpedia.org/property/engine>,
+        <http://dbpedia.org/property/footer>,
+        <http://dbpedia.org/property/modelYears>,
+        <http://dbpedia.org/property/motor>,
+        <http://dbpedia.org/property/reason>,
+        <http://dbpedia.org/property/related>,
+        <http://dbpedia.org/property/sp>,
+        <http://dbpedia.org/property/wheelbase>,
+        <http://dbpedia.org/property/width> ;
     rdfs:domain carshare:Vehicle ;
     rdfs:range xsd:string .
 
 carshare:temperature a rdf:Property ;
-    ns1:predictedLink <http://dbpedia.org/ontology/Automobile/wheelbase>,
-        <http://dbpedia.org/ontology/MeanOfTransportation/height>,
-        <http://dbpedia.org/ontology/abstract>,
-        <http://dbpedia.org/ontology/range>,
-        <http://dbpedia.org/ontology/sales>,
-        <http://dbpedia.org/property/align>,
-        <http://dbpedia.org/property/assembly>,
-        <http://dbpedia.org/property/battery>,
-        <http://dbpedia.org/property/designer>,
-        <http://dbpedia.org/property/engine>,
-        <http://dbpedia.org/property/footer>,
-        <http://dbpedia.org/property/image>,
-        <http://dbpedia.org/property/manufacturer>,
-        <http://dbpedia.org/property/motor>,
-        <http://dbpedia.org/property/name>,
-        <http://dbpedia.org/property/platform>,
-        <http://dbpedia.org/property/predecessor>,
-        <http://dbpedia.org/property/reason>,
-        <http://dbpedia.org/property/related>,
-        <http://dbpedia.org/property/sp>,
-        <http://dbpedia.org/property/totalWidth>,
-        <http://dbpedia.org/property/url>,
-        <http://dbpedia.org/property/width> ;
     rdfs:domain carshare:TripMetrics ;
     rdfs:range xsd:integer .
 
 carshare:timeOfDay a rdf:Property ;
-    ns1:predictedLink <http://dbpedia.org/ontology/automobilePlatform>,
-        <http://dbpedia.org/ontology/battery>,
-        <http://dbpedia.org/property/aka>,
-        <http://dbpedia.org/property/chassis>,
-        <http://dbpedia.org/property/class>,
-        <http://dbpedia.org/property/date>,
-        <http://dbpedia.org/property/direction>,
-        <http://dbpedia.org/property/height>,
-        <http://dbpedia.org/property/length>,
-        <http://dbpedia.org/property/wheelbase> ;
+    ns1:predictedLink <http://dbpedia.org/property/name>,
+        <http://dbpedia.org/property/production>,
+        <http://dbpedia.org/property/url> ;
     rdfs:domain carshare:TripRequest ;
     rdfs:range xsd:string .
 
 carshare:toLocation a rdf:Property ;
-    ns1:predictedLink <http://dbpedia.org/ontology/automobilePlatform>,
+    ns1:predictedLink <http://dbpedia.org/ontology/MeanOfTransportation/height>,
+        <http://dbpedia.org/ontology/MeanOfTransportation/length>,
+        <http://dbpedia.org/ontology/MeanOfTransportation/weight>,
         <http://dbpedia.org/ontology/battery>,
-        <http://dbpedia.org/property/aka>,
-        <http://dbpedia.org/property/chassis>,
-        <http://dbpedia.org/property/class>,
-        <http://dbpedia.org/property/date>,
+        <http://dbpedia.org/ontology/height>,
+        <http://dbpedia.org/ontology/sales>,
+        <http://dbpedia.org/property/align>,
+        <http://dbpedia.org/property/battery>,
+        <http://dbpedia.org/property/caption>,
+        <http://dbpedia.org/property/designer>,
         <http://dbpedia.org/property/direction>,
-        <http://dbpedia.org/property/length>,
-        <http://dbpedia.org/property/wheelbase> ;
+        <http://dbpedia.org/property/engine>,
+        <http://dbpedia.org/property/footer>,
+        <http://dbpedia.org/property/modelYears>,
+        <http://dbpedia.org/property/motor>,
+        <http://dbpedia.org/property/reason>,
+        <http://dbpedia.org/property/related>,
+        <http://dbpedia.org/property/sp>,
+        <http://dbpedia.org/property/wheelbase>,
+        <http://dbpedia.org/property/width> ;
     rdfs:domain carshare:TripRequest ;
     rdfs:range xsd:string .
 
 carshare:traffic a rdf:Property ;
+    ns1:predictedLink <http://dbpedia.org/ontology/MeanOfTransportation/height>,
+        <http://dbpedia.org/ontology/MeanOfTransportation/length>,
+        <http://dbpedia.org/ontology/MeanOfTransportation/weight>,
+        <http://dbpedia.org/ontology/automobilePlatform>,
+        <http://dbpedia.org/ontology/battery>,
+        <http://dbpedia.org/ontology/sales>,
+        <http://dbpedia.org/property/caption>,
+        <http://dbpedia.org/property/designer>,
+        <http://dbpedia.org/property/engine>,
+        <http://dbpedia.org/property/footer>,
+        <http://dbpedia.org/property/modelYears>,
+        <http://dbpedia.org/property/reason>,
+        <http://dbpedia.org/property/related>,
+        <http://dbpedia.org/property/sp>,
+        <http://dbpedia.org/property/title>,
+        <http://dbpedia.org/property/wheelbase>,
+        <http://dbpedia.org/property/width> ;
     rdfs:domain carshare:TripRequest ;
     rdfs:range xsd:string .
 
@@ -734,154 +670,65 @@ carshare:trafficCongestion a rdf:Property ;
     rdfs:range xsd:integer .
 
 carshare:transmissionReference a rdf:Property ;
-    ns1:predictedLink <http://dbpedia.org/ontology/Automobile/wheelbase>,
-        <http://dbpedia.org/ontology/MeanOfTransportation/height>,
-        <http://dbpedia.org/ontology/abstract>,
-        <http://dbpedia.org/ontology/range>,
-        <http://dbpedia.org/ontology/sales>,
-        <http://dbpedia.org/property/align>,
-        <http://dbpedia.org/property/assembly>,
-        <http://dbpedia.org/property/battery>,
-        <http://dbpedia.org/property/designer>,
-        <http://dbpedia.org/property/engine>,
-        <http://dbpedia.org/property/footer>,
-        <http://dbpedia.org/property/image>,
-        <http://dbpedia.org/property/manufacturer>,
-        <http://dbpedia.org/property/motor>,
-        <http://dbpedia.org/property/name>,
-        <http://dbpedia.org/property/platform>,
-        <http://dbpedia.org/property/predecessor>,
-        <http://dbpedia.org/property/reason>,
-        <http://dbpedia.org/property/related>,
-        <http://dbpedia.org/property/sp>,
-        <http://dbpedia.org/property/totalWidth>,
-        <http://dbpedia.org/property/url>,
-        <http://dbpedia.org/property/width> ;
     rdfs:domain carshare:Client ;
     rdfs:range xsd:string .
 
 carshare:tripMetrics a rdf:Property ;
-    ns1:predictedLink <http://dbpedia.org/ontology/Automobile/wheelbase>,
-        <http://dbpedia.org/ontology/MeanOfTransportation/height>,
-        <http://dbpedia.org/ontology/abstract>,
-        <http://dbpedia.org/ontology/range>,
-        <http://dbpedia.org/ontology/sales>,
-        <http://dbpedia.org/property/align>,
-        <http://dbpedia.org/property/assembly>,
-        <http://dbpedia.org/property/battery>,
-        <http://dbpedia.org/property/designer>,
-        <http://dbpedia.org/property/engine>,
-        <http://dbpedia.org/property/footer>,
-        <http://dbpedia.org/property/image>,
-        <http://dbpedia.org/property/manufacturer>,
-        <http://dbpedia.org/property/modelYears>,
-        <http://dbpedia.org/property/motor>,
-        <http://dbpedia.org/property/name>,
-        <http://dbpedia.org/property/platform>,
-        <http://dbpedia.org/property/predecessor>,
-        <http://dbpedia.org/property/reason>,
-        <http://dbpedia.org/property/related>,
-        <http://dbpedia.org/property/sp>,
-        <http://dbpedia.org/property/totalWidth>,
-        <http://dbpedia.org/property/url>,
-        <http://dbpedia.org/property/width> ;
     rdfs:domain carshare:TripRequest ;
     rdfs:range carshare:TripMetrics .
 
 carshare:vehicleID a rdf:Property ;
     ns1:predictedLink <http://dbpedia.org/ontology/automobilePlatform>,
-        <http://dbpedia.org/ontology/battery>,
-        <http://dbpedia.org/property/aka>,
-        <http://dbpedia.org/property/chassis>,
-        <http://dbpedia.org/property/class>,
-        <http://dbpedia.org/property/date>,
-        <http://dbpedia.org/property/direction>,
-        <http://dbpedia.org/property/height>,
-        <http://dbpedia.org/property/length>,
-        <http://dbpedia.org/property/wheelbase> ;
+        <http://dbpedia.org/ontology/thumbnail>,
+        <http://dbpedia.org/property/name>,
+        <http://dbpedia.org/property/production>,
+        <http://dbpedia.org/property/title> ;
     rdfs:domain carshare:Vehicle ;
     rdfs:range xsd:string .
 
 carshare:vehiclePosition a rdf:Property ;
-    ns1:predictedLink <http://dbpedia.org/ontology/Automobile/wheelbase>,
-        <http://dbpedia.org/ontology/MeanOfTransportation/height>,
-        <http://dbpedia.org/ontology/abstract>,
-        <http://dbpedia.org/ontology/range>,
-        <http://dbpedia.org/ontology/sales>,
-        <http://dbpedia.org/property/align>,
+    ns1:predictedLink <http://dbpedia.org/ontology/thumbnail>,
         <http://dbpedia.org/property/assembly>,
-        <http://dbpedia.org/property/battery>,
-        <http://dbpedia.org/property/designer>,
-        <http://dbpedia.org/property/engine>,
-        <http://dbpedia.org/property/footer>,
-        <http://dbpedia.org/property/image>,
-        <http://dbpedia.org/property/manufacturer>,
-        <http://dbpedia.org/property/modelYears>,
-        <http://dbpedia.org/property/motor>,
         <http://dbpedia.org/property/name>,
         <http://dbpedia.org/property/platform>,
-        <http://dbpedia.org/property/predecessor>,
-        <http://dbpedia.org/property/reason>,
-        <http://dbpedia.org/property/related>,
-        <http://dbpedia.org/property/sp>,
-        <http://dbpedia.org/property/totalWidth>,
+        <http://dbpedia.org/property/production>,
         <http://dbpedia.org/property/url>,
-        <http://dbpedia.org/property/width> ;
+        <http://dbpedia.org/property/weight> ;
     rdfs:domain carshare:Vehicle ;
     rdfs:range xsd:string .
 
 carshare:visibility a rdf:Property ;
-    ns1:predictedLink <http://dbpedia.org/ontology/Automobile/wheelbase>,
-        <http://dbpedia.org/ontology/MeanOfTransportation/height>,
-        <http://dbpedia.org/ontology/abstract>,
-        <http://dbpedia.org/ontology/range>,
+    ns1:predictedLink <http://dbpedia.org/ontology/MeanOfTransportation/height>,
+        <http://dbpedia.org/ontology/MeanOfTransportation/length>,
+        <http://dbpedia.org/ontology/MeanOfTransportation/width>,
+        <http://dbpedia.org/ontology/battery>,
+        <http://dbpedia.org/ontology/height>,
         <http://dbpedia.org/ontology/sales>,
+        <http://dbpedia.org/property/aka>,
         <http://dbpedia.org/property/align>,
         <http://dbpedia.org/property/assembly>,
         <http://dbpedia.org/property/battery>,
+        <http://dbpedia.org/property/class>,
         <http://dbpedia.org/property/designer>,
-        <http://dbpedia.org/property/engine>,
+        <http://dbpedia.org/property/direction>,
         <http://dbpedia.org/property/footer>,
-        <http://dbpedia.org/property/image>,
-        <http://dbpedia.org/property/manufacturer>,
+        <http://dbpedia.org/property/height>,
         <http://dbpedia.org/property/modelYears>,
         <http://dbpedia.org/property/motor>,
-        <http://dbpedia.org/property/name>,
         <http://dbpedia.org/property/platform>,
-        <http://dbpedia.org/property/predecessor>,
         <http://dbpedia.org/property/reason>,
         <http://dbpedia.org/property/related>,
         <http://dbpedia.org/property/sp>,
-        <http://dbpedia.org/property/totalWidth>,
-        <http://dbpedia.org/property/url>,
-        <http://dbpedia.org/property/width> ;
+        <http://dbpedia.org/property/weight>,
+        <http://dbpedia.org/property/wheelbase> ;
     rdfs:domain carshare:TripMetrics ;
     rdfs:range xsd:integer .
 
 carshare:weather a rdf:Property ;
-    ns1:predictedLink <http://dbpedia.org/ontology/Automobile/wheelbase>,
-        <http://dbpedia.org/ontology/MeanOfTransportation/height>,
-        <http://dbpedia.org/ontology/abstract>,
-        <http://dbpedia.org/ontology/range>,
-        <http://dbpedia.org/ontology/sales>,
-        <http://dbpedia.org/property/align>,
-        <http://dbpedia.org/property/assembly>,
-        <http://dbpedia.org/property/battery>,
-        <http://dbpedia.org/property/designer>,
-        <http://dbpedia.org/property/engine>,
-        <http://dbpedia.org/property/footer>,
-        <http://dbpedia.org/property/image>,
-        <http://dbpedia.org/property/manufacturer>,
-        <http://dbpedia.org/property/motor>,
+    ns1:predictedLink <http://dbpedia.org/ontology/thumbnail>,
         <http://dbpedia.org/property/name>,
-        <http://dbpedia.org/property/platform>,
-        <http://dbpedia.org/property/predecessor>,
-        <http://dbpedia.org/property/reason>,
-        <http://dbpedia.org/property/related>,
-        <http://dbpedia.org/property/sp>,
-        <http://dbpedia.org/property/totalWidth>,
-        <http://dbpedia.org/property/url>,
-        <http://dbpedia.org/property/width> ;
+        <http://dbpedia.org/property/production>,
+        <http://dbpedia.org/property/url> ;
     rdfs:domain carshare:TripRequest ;
     rdfs:range xsd:string .
 

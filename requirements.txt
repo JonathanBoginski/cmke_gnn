@@ -16,3 +16,4 @@ torch-geometric>=2.4.0
 rdflib>=7.0.0
 networkx>=3.0
 scikit-learn>=1.0.0
+SPARQLWrapper
