@@ -4,3 +4,14 @@ uvicorn
 fastapi
 rdflib
 SPARQLWrapper
+python-multipart
+torch
+torch-geometric
+uvicorn
+fastapi
+rdflib
+SPARQLWrapper
+requests
+spacy==3.5.0
+numpy==1.22.4
+thinc==8.1.7

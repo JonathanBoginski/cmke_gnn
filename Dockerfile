@@ -7,6 +7,7 @@ WORKDIR /app
 # Kopiere requirements.txt und installiere Abhängigkeiten
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
+RUN python -m spacy download en_core_web_sm
 
 # Kopiere den restlichen Code ins Arbeitsverzeichnis
 COPY . .
