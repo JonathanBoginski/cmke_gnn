@@ -62,7 +62,7 @@ g2 = Graph()
 
 # Parse the RDF files
 g1.parse("carshare-schema.ttl", format="turtle")
-g2.parse("open_data_car_properties.ttl", format="turtle")
+g2.parse("dynamic_data.ttl", format="turtle")
 
 # Convert RDF graphs to PyTorch Geometric graphs
 global_nodes = {}
